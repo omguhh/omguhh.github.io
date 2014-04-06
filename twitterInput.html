@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+
+          <meta charset="utf-8">
+          <title>myTFM</title>
+          <link rel="stylesheet" href="css/formcss.css" type="text/css" />
+         
+    </head>    
+
+    <body> 
+      <div id = "wrapper">
+        <div class = "parent_header">
+   <!-- This is the header of the page   --> 
+
+   <div id ="top_bar"></div>
+   <div id ="top_grid"> 
+   <!--  make the picture smaller -->
+  <img src = "Images/twitterLogo.png" style="position: relative;top:8px;left:15px;">
+
+ <!--  need to make it a responsive menu -->
+
+<a href="#" id="menu_text">MENU</a>
+
+</div>
+</div>
+
+<form class="contact_form" action="AddFollower.php" method="post" name="contact_form" > 
+
+  <h2 style="font-size:24px;font-family:Segoe UI;color:#373737;padding-left:40px"> Add a new follower </h2>
+    <ul class="contact_form_list">
+       
+        <li>
+            <label>Username: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text"  placeholder="an_example" name="userName"  />
+        </li>
+
+         <li>
+            <label> Twitter Name:  </label> 
+            <input type="text"  placeholder="Ms.Example" name="twitterName" />
+        </li>
+
+         <li>
+            <label>Location:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" placeholder="Somewhere over the rainbow" name="userLocation"  />
+        </li>
+
+        <li>
+            <label>Description:</label> </br>
+            <textarea cols="45" rows="5" name = "description">  </textarea>
+        </li>
+
+
+        <li>
+            <label> Number Of Followers:</label>&nbsp;
+            <input type="text" name = "numOfFollowers" />
+        </li>
+        <li>
+            <label>Number Of following:</label>&nbsp;
+            <input type="text"  name = "numOfFollowing"  />
+
+           
+        </li>
+
+        <li>
+            <label>Number of tweets:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="numOfTweets" />
+
+        </li>
+
+</ul>
+
+        
+<button type="submit" class="push_button" >Proceed</button>
+       
+</form>
+
+
+
+<!-- wrapper closing tag -->
+
+	</div> 
+
+</body>

@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <style type="text/css">
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+
+
 .fading {
-    height:100%;
-    width:100%;
-    background: White;
+	 position: absolute;
+	height: 100%;
+	width: 100%;
     animation: fading 10s infinite;
     -webkit-animation: fading 10s infinite;
-    border-radius:5px;
-}
-.fading img{
-    width:100px;
-    animation: opacityfading 10s infinite;
-    -webkit-animation: opacityfading 10s infinite;
-    margin:30px;
-}
-@keyframes fading {
-    0%   { background: #f1c40f; }
-    33%  { background: #1abc9c; }
-    66%  { background: #9b59b6; }
-    100% { background: #e74c3c; }
+ 
 }
 
 @-webkit-keyframes fading {
@@ -28,12 +32,7 @@
     66%  { background: #9b59b6; }
     100% { background: #e74c3c; }
 }
-@keyframes opacityfading {
-    0%   { opacity: 0; }
-    33%  { opacity: 1; }
-    66%  { opacity: 0; }
-    100% { opacity: 1; }
-}
+
 
 @-webkit-keyframes opacityfading {
     0%   { opacity: 0; }
@@ -42,13 +41,28 @@
     100% { opacity: 1; }
 }
 </style>
+
+<script>
+      $(document).ready(function() {
+
+      	var terms = ["buddy", "batata", "fab"];
+
+function rotateTerm() {
+  var ct = $("#rotate").data("term") || 0;
+  $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
+              .delay(2000).fadeOut(200, rotateTerm);
+}
+$(rotateTerm);
+ } );
+ </script>
+
 <body>
-	<div class="fading">
-    
+<div class="fading">
 
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. </p>
+	<div style="margin:0 auto; text-align:left; width:500px; padding-top: 200px;">  
+		<p style="font-family: Century Gothic;font-weight: bold;font-size: 84px;color:#ecf0f1;">I am <span id="rotate">this</span> </p>
 </div>
-
+</div>
 </body>
 </html>
+

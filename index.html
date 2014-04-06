@@ -1,7 +1,54 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+.fading {
+    height:200px;
+    width:100%;
+    background: White;
+    animation: fading 10s infinite;
+    -webkit-animation: fading 10s infinite;
+    border-radius:5px;
+}
+.fading img{
+    width:100px;
+    animation: opacityfading 10s infinite;
+    -webkit-animation: opacityfading 10s infinite;
+    margin:30px;
+}
+@keyframes fading {
+    0%   { background: #f1c40f; }
+    33%  { background: #1abc9c; }
+    66%  { background: #9b59b6; }
+    100% { background: #e74c3c; }
+}
+
+@-webkit-keyframes fading {
+    0%   { background: #f1c40f; }
+    33%  { background: #1abc9c; }
+    66%  { background: #9b59b6; }
+    100% { background: #e74c3c; }
+}
+@keyframes opacityfading {
+    0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes opacityfading {
+    0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+</style>
 <body>
+	<div class="fading">
+    
+
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages. </p>
+</div>
+
 </body>
 </html>

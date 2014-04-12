@@ -14,10 +14,7 @@ html {
 
 body {
    margin: 0px;
-   min-height: 100%;
-   width: 100%;
    font-family:Montserrat;
-   font-size: 56px;
    text-align: center;
     
 }
@@ -31,6 +28,26 @@ body {
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+.container{
+
+  background-color:#ecf0f1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.headcontainer  {
+  background-color:#f1c40f;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
 
 @keyframes blink{
     0% { opacity:1; }
@@ -84,11 +101,11 @@ body {
 </script>
 
 <body>
-<div>
+<div class="headcontainer">
 
-	<p style="color:#3498db; padding-top: 50px; font-weight:500;font-size:70px;"> I'm  <span class="element"></span> </p>
+	<p style="color:#ecf0f1;padding-top: 80px; font-weight:500;font-size:70px;"> I'm  <span class="element"></span></p>
+  <p style="color:#ecf0f1;margin-bottom: 90px;font-size:20px;font-family:Montserrat"> This site is under construction.</p>
 	
-</div>
 </div>
 </body>
 </html>

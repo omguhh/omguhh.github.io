@@ -1,16 +1,46 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
-html {
-   margin: 0px;
-   height: 100%;
-   width: 100%;
+body, html {
+  height: auto;
+  overflow: auto;
+}
+body {
+  background-color:#f1c40f;
+  color: #ecf0f1;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin: 0;
 }
 
-body {
-   margin: 0px;
-   font-family:Montserrat;
-   text-align: center;
-    
+.border {
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+}
+
+.border.top {   width: 105%;   height: 10px; top: 0px; margin-left: -20px; }
+.border.bottom { width: 105%;   height: 10px; bottom: 0px }
+.border.right {  height: 105%;   width: 10px; right: 0px }
+.border.left {   height: 105%;   width: 10px;left: 0px; margin-top: -20px; }
+
+.headcontainer  {
+  background-color:#f1c40f;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  line-height: 0.9px;
+}
+
+.links{
+  text-decoration: none;
+  color:#ecf0f1;
+
+}
+
+.links a:hover  {
+   border-bottom:3px solid #e74c3c;
+   transition: border-bottom 0.4s ease;
+
 }
 
 #typed-cursor{
@@ -21,37 +51,6 @@ body {
     -ms-animation: blink 0.7s infinite;
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-}
-
-.container{
-
-  background-color:#ecf0f1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.headcontainer  {
-  background-color:#1abc9c;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  line-height: 0.9px;
-}
-
-.links{
-  text-decoration: none;
-  color:#34495e;
-
-}
-
-.links a:hover  {
-   border-bottom:3px solid #e74c3c;
-   transition: border-bottom 0.4s ease;
-
 }
 
 @keyframes blink{

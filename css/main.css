@@ -4,9 +4,9 @@ body, html {
   height: auto;
   overflow: auto;
 }
-body {
-  background-color:#f1c40f;
-  color: #ecf0f1;
+body { 
+  background-color:#FBFCD0;
+  color: #fdff42;
   font-family: 'Montserrat';
   text-align: center;
   margin: 0;
@@ -15,16 +15,16 @@ body {
 .border {
   position: fixed;
   z-index: 100;
-  background: #fff;
+  background: #FCF7FA;
 }
 
-.border.top {   width: 105%;   height: 10px; top: 0px; margin-left: -20px; }
-.border.bottom { width: 105%;   height: 10px; bottom: 0px }
-.border.right {  height: 105%;   width: 10px; right: 0px }
-.border.left {   height: 105%;   width: 10px;left: 0px; margin-top: -20px; }
+.border.top {   width: 105%;   height: 20px; top: 0px; margin-left: -20px; }
+.border.bottom { width: 105%;   height: 20px; bottom: 0px }
+.border.right {  height: 105%;   width: 20px; right: 0px }
+.border.left {   height: 105%;   width: 20px;left: 0px; margin-top: -20px; }
 
 .headcontainer  {
-  background-color:#fad337;
+  background-color:#FFE545;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -33,12 +33,14 @@ body {
 
 .links{
   text-decoration: none;
-  color:#ecf0f1;
+  color:#F9FAD2;
+  font-size: 20px;
+  font-weight: 700;
 
 }
 
 .links a:hover  {
-   border-bottom:3px solid #e74c3c;
+   border-bottom:3px solid #FF7149;
    transition: border-bottom 0.4s ease;
 
 }

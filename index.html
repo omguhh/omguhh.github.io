@@ -3,9 +3,11 @@
 <head>
 <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/typed.js"></script>
+<script type="text/javascript" src="js/skrollr.js"></script>
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 
 <script>
+
     $(function(){
         $(".element").typed({
         strings: ["a developer.", "a part-time hero.","Yasmine."],
@@ -13,6 +15,7 @@
         });
     });
 </script>
+
  </head>
 <body>
   <div class="border top"> </div>
@@ -21,7 +24,7 @@
   <div class="border bottom"> </div>
 
 <div class ="headcontainer">
-	<p style="color:#ecf0f1;font-size:70px;padding-top:70px;"> I'm  <span class="element"></span></p>
+	<p style="color:#F9FAD2;font-size:70px;padding-top:80px;"> I'm  <span class="element"></span></p>
  <div class ="links">
 
   <a href="https://twitter.com/omguhh" class="links">Twitter</a> 
@@ -29,7 +32,9 @@
   <span>&nbsp;&nbsp; <a href="" class="links">Previous Work</a> </span>
 </div>
 </div>
-
+        <script type="text/javascript">
+            skrollr.init();
+        </script>
 </body>
 </html>
 

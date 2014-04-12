@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/typed.js"></script>
+
 <style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 html {
    margin: 0px;
@@ -13,17 +16,46 @@ body {
    margin: 0px;
    min-height: 100%;
    width: 100%;
+   font-family:Montserrat;
+   font-size: 56px;
+   text-align: center;
+    
 }
 
+#typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
 
-
-.fading {
-	 position: absolute;
-	height: 100%;
-	width: 100%;
-    animation: fading 10s infinite;
-    -webkit-animation: fading 10s infinite;
- 
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 @-webkit-keyframes fading {
@@ -43,25 +75,19 @@ body {
 </style>
 
 <script>
-      $(document).ready(function() {
-
-      	var terms = ["bby", "homie", "thing"];
-
-function rotateTerm() {
-  var ct = $("#rotate").data("term") || 0;
-  $("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
-              .delay(2000).fadeOut(200, rotateTerm);
-}
-$(rotateTerm);
- } );
- </script>
+    $(function(){
+        $(".element").typed({
+        strings: ["a developer.", "a part-time hero.","Yasmine."],
+        typeSpeed: 0
+        });
+    });
+</script>
 
 <body>
-<div class="fading">
+<div>
 
-	<div style="margin:0 auto; text-align:left; width:500px; padding-top: 200px;">  
-		<p style="font-family: Century Gothic;font-weight: bold;font-size: 84px;color:#ecf0f1;">Sup <span id="rotate">this</span>?</p>
-		<embed height="0" width="-0" src="photograph.mp3">
+	<p style="color:#3498db; padding-top: 50px; font-weight:500;font-size:80px;"> I'm  <span class="element"></span> </p>
+	
 </div>
 </div>
 </body>

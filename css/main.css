@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   font-family:Montserrat;
+   text-align: center;
+    
+}
+
+#typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.container{
+
+  background-color:#ecf0f1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.headcontainer  {
+  background-color:#1abc9c;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  line-height: 0.9px;
+}
+
+.links{
+  text-decoration: none;
+  color:#34495e;
+
+}
+
+.links a:hover  {
+   border-bottom:3px solid #e74c3c;
+   transition: border-bottom 0.4s ease;
+
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fading {
+    0%   { background: #f1c40f; }
+    33%  { background: #1abc9c; }
+    66%  { background: #9b59b6; }
+    100% { background: #e74c3c; }
+}
+
+
+@-webkit-keyframes opacityfading {
+    0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+

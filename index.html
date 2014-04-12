@@ -1,95 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/typed.js"></script>
-
-<style type="text/css">
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-
-html {
-   margin: 0px;
-   height: 100%;
-   width: 100%;
-}
-
-body {
-   margin: 0px;
-   font-family:Montserrat;
-   text-align: center;
-    
-}
-
-#typed-cursor{
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
-.container{
-
-  background-color:#ecf0f1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.headcontainer  {
-  background-color:#f1c40f;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-
-
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-ms-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-o-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@-webkit-keyframes fading {
-    0%   { background: #f1c40f; }
-    33%  { background: #1abc9c; }
-    66%  { background: #9b59b6; }
-    100% { background: #e74c3c; }
-}
-
-
-@-webkit-keyframes opacityfading {
-    0%   { opacity: 0; }
-    33%  { opacity: 1; }
-    66%  { opacity: 0; }
-    100% { opacity: 1; }
-}
-</style>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
 
 <script>
     $(function(){
@@ -99,14 +13,21 @@ body {
         });
     });
 </script>
-
+ </head>
 <body>
+
 <div class="headcontainer">
 
-	<p style="color:#ecf0f1;padding-top: 80px; font-weight:500;font-size:70px;"> I'm  <span class="element"></span></p>
-  <p style="color:#ecf0f1;margin-bottom: 90px;font-size:20px;font-family:Montserrat"> This site is under construction.</p>
-	
+	<p style="color:#34495e;font-weight:500;font-size:70px;padding-top:80px;"> I'm  <span class="element"></span></p>
+  <div class="links">
+  <a href="https://twitter.com/omguhh" class="links">Twitter</a> 
+  <span>&nbsp;&nbsp; <a href="" class="links">About Me</a> </span>
+  <span>&nbsp;&nbsp; <a href="" class="links">Previous Work</a> </span>
+  
 </div>
+</div> 
+	
+
 </body>
 </html>
 

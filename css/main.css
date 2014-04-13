@@ -47,6 +47,25 @@ body {
   z-index: 1;
 }
 
+.on_mail  {
+left: 1190px; 
+width: 70px;
+color: #FFF;
+background:  #f1c40f;
+border-radius: 10px;
+padding: 15px;
+position: fixed;
+top: 30px;
+z-index: 200;
+cursor: pointer;
+transition: all 120ms ease-in
+}
+
+.on_mail:hover  {
+background: #34495e;
+transition: all 120ms ease-in
+}
+
 .divider {
   display: block;
   margin: 5px auto;

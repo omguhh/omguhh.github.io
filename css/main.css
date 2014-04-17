@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 body, html {
   height: auto;
@@ -19,39 +20,48 @@ body {
   background: #FCF7FA;
 }
 
-.border.top {   width: 105%;   height: 20px; top: 0px; margin-left: -20px; }
-.border.bottom { width: 105%;   height: 20px; bottom: 0px }
-.border.right {  height: 105%;   width: 20px; right: 0px }
-.border.left {   height: 105%;   width: 20px;left: 0px; margin-top: -20px; }
+.border.top {   width: 105%;   height: 10px; top: 0px; margin-left: -20px; }
+.border.bottom { width: 105%;   height: 10px; bottom: 0px }
+.border.right {  height: 105%;   width: 10px; right: 0px }
+.border.left {   height: 105%;   width: 10px;left: 0px; margin-top: -20px; }
 
 .headcontainer  {  
   padding-top: 10px;
   display: block;
   width: 100%;
-  height: 400px;
-  background-image:url('twinkie1.jpg');
+  height: 350px;
+/*  background-image:url('blue.png');*/ 
+  background-image: linear-gradient(45deg, #00ef9d, #00ecd3);
   background-repeat:no-repeat;
-  background-color:#FFE545;
   background-size: cover;
   position:relative;
-  z-index: 2;
+  z-index: 5;
 
 }
 
 .midcontainer  {  
+  padding-top: 40px;
   display: block;
-  position:absolute;
+  position:relative;
   width: 100%;
-  height: 480px;
-  background-color:#FF7149;
-  z-index: 1;
+  height: 350px;
+  background-color:#fff; 
+  z-index: 4;
 }
+
+.midcontainer p { 
+font-weight: thin;
+font-family: 'Roboto';
+color:#fff;
+font-size:40px;
+}
+
 
 .on_mail  {
 left: 1190px; 
 width: 70px;
 color: #FFF;
-background:  #f1c40f;
+background:  #1abc9c;
 border-radius: 10px;
 padding: 15px;
 position: fixed;
@@ -62,15 +72,19 @@ transition: all 120ms ease-in
 }
 
 .on_mail:hover  {
-background: #34495e;
+
+background: #16a085;
 transition: all 120ms ease-in
 }
 
 .divider {
+  position:relative;
+  bottom:50px;
   display: block;
   margin: 5px auto;
   width: 50%;
   height: 1px;
+
   border-top: rgba(0, 0, 0, 0.1) 1px solid;
   border-bottom: rgba(255, 255, 255, 0.2) 1px solid; 
 }
@@ -80,6 +94,8 @@ list-style: none;
 display: block;
 margin: 0;
 text-align: center;
+  position:relative;
+  bottom:50px;
 }
 
 .main_nav li{
@@ -98,16 +114,105 @@ text-align: center;
     text-decoration: none;
     text-shadow: none;
     border-radius: 3px;
-    transition: all 0.1s ease-in-out; 
+    transition: all 0.2s ease-in-out; 
   }
+
 .main_nav a:hover {
-color: #fff;
-background: #f1c40f; }
+border-radius: 0px;
+border-bottom: 3px solid #1abc9c; 
+transition: all 0.2s ease-in-out; 
+}
 
 .main_nav .label {
 display: block;
 clear: both;
 font-size: 0.5em; }
+
+
+.android_dev{
+float:left;
+width:33%;
+height:60%;
+
+
+}
+
+.web_dev{
+float:left;
+width:33%;
+height:60%;
+
+
+}
+
+.software_dev{
+float:left;
+width:34%;
+height:60%;
+
+
+}
+
+.midcontainer img {
+padding-top: 40px;
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+
+
+}
+
+.midcontainer img:hover {
+
+filter: none;
+  -webkit-filter: grayscale(0%);
+   transition: all 0.3s ease-in-out;  }
+
+.midcontainer p {
+
+  text-align: center;
+  display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font: 100 14px 'Lato', helvetica, arial, sans-serif;
+color: #BBB;
+}
+
+.portfolio {
+overflow: hidden;
+  padding-top: 10px;
+  width: 100%;
+  height: 870px;
+  background-color:#ecf0f1; 
+
+}
+
+.showcase1 {
+  
+  width: 100%;
+  height: 280px;
+  background-color:#2ecc71; 
+
+}
+
+
+.showcase2 {
+  
+  width: 100%;
+  height: 280px;
+  background-color:#3498db; 
+
+}
+
+.showcase3 {
+  
+  width: 100%;
+  height: 280px;
+  background-color:#e74c3c; 
+
+}
 
 #typed-cursor{
     opacity: 1;

@@ -181,7 +181,7 @@ color: #BBB;
 }
 
 .portfolio {
-overflow: hidden;
+  overflow: hidden;
   padding-top: 10px;
   width: 100%;
   height: 870px;
@@ -211,6 +211,129 @@ overflow: hidden;
   width: 100%;
   height: 280px;
   background-color:#e74c3c; 
+
+}
+
+.about_me {
+  
+  width: 100%;
+  height: 380px;
+  background-color:#fff;
+  padding-top: 40px; 
+
+}
+
+.texty_stuff{
+
+float: left;
+  width: 45%;
+  height: 300px;
+  padding-left: 50px;
+  padding-top: 20px;
+
+}
+
+.texty_stuff a {
+text-decoration: none;
+text-shadow: none;
+text-decoration: none;
+border: 3px solid #00ef9d; 
+float: left;
+color: #00ef9d;
+padding: 6px; 
+
+}
+
+.texty_stuff a:hover {
+color: #fff;
+background-color: #00ef9d;
+transition: all 0.3s ease-in-out;
+
+}
+
+.img_bit{
+   padding-top: 20px;
+  float:right;
+  width: 50%;
+  height: 100px;
+}
+
+.custom_img{
+padding: 5px;
+background: #FFF;
+border: 1px solid #dddddd;
+width:50%;
+-moz-transition: all 0.1s linear;
+-webkit-transition: all 0.1s linear;
+-ms-transition: all 0.1s linear;
+transition: all 0.1s linear;
+
+}
+
+.twitter_container{
+
+  width: 100%;
+  height: 280px;
+  background-image: linear-gradient(45deg, #00ef9d, #00ecd3);
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+
+}
+
+.twitter_innerContainer{
+  border:2px solid #fff;
+  width: 70%;
+  height: 140px;
+ /* background-color:#00ad8a;*/
+  background-repeat:no-repeat;
+  margin:0 auto;
+  padding: 5px;
+}
+
+.twitter_divider {
+  
+  bottom:50px;
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+  height: 1px;
+  border-top: rgba(0, 0, 0, 0.1) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.2) 1px solid; 
+}
+
+.custom_img:hover{
+  -moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+
+.contact_container{
+
+
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.contact_container a {
+text-decoration: none;
+text-shadow: none;
+text-decoration: none;
+border: 3px solid #00ef9d; 
+color: #00ef9d;
+padding: 25px; 
+
+}
+
+.contact_container a:hover {
+color: #fff;
+background-color: #00ef9d;
+transition: all 0.3s ease-in-out;
 
 }
 

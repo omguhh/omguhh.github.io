@@ -282,7 +282,6 @@ transition: all 0.1s linear;
 }
 
 .twitter_innerContainer{
-
   border:2px solid #fff;
   width: 70%;
   height: 140px;
@@ -291,10 +290,6 @@ transition: all 0.1s linear;
   margin:0 auto;
   padding: 5px;
 }
-
-
-
-
 
 .twitter_divider {
   

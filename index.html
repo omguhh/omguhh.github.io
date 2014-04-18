@@ -4,6 +4,7 @@
 <script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/typed.js"></script>
 <script type="text/javascript" src="js/skrollr.js"></script>
+  <script src="js/bjqs-1.3.min.js"></script>
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 
 <script>
@@ -19,11 +20,18 @@
 //     $("#tweets").append(html);
 // });
 
+
+function pageScroll() {
+      $('html,body').animate({
+        scrollTop: $(".about_me").offset().top},
+        'slow');
+    }
+
 </script>
 
  </head>
 <body>
-<a id="message-me" href="mailto:shroomz.ftw@gmail.com" data-0="margin-top:20px;" data-310p="margin-top:20px;" data-315p="margin-top:-140px;" class="on_mail" >
+<a id="message-me" href="" data-0="margin-top:20px;" data-310p="margin-top:20px;" data-315p="margin-top:-140px;" class="on_mail" >
     <img src="images/mail.png">
   </a> 
   <div class="border top"> </div>
@@ -43,8 +51,8 @@
 </a> 
 </li>
 <li class="Me">
-<a href=""> <span> <img src="images/netlog.png"> </span>
-<span class="label">About Me</span>
+<a href="javascript:pageScroll()" id="#me"> <span> <img src="images/netlog.png"> </span>
+<span class="label" >About Me</span>
 </a>
 </li>
 <li class="Github">
@@ -100,16 +108,35 @@ Qo bucoyop hehos mi adaqimu gahinag orizam ieniecike votag! </p>
 
 </div>
 
-<div class="showcase3">
-
-
-</div>
-
 
 <div class="showcase2">
+<div class="img_5" >
 
+<div class="info_2">
+<h2 style="color:#00ef9d;font-family:sans-serif;font-size:31px;font-weight: bold;"  data-0="opacity:0" data-165p="opacity:0; margin-top:30px" data-170p="opacity:1; margin-top:30px" data-230p="opacity:0; margin-top:-20px"> Bubble</h2>
+
+<p style="color:#BBB;font-size:20px;font-family:'Lato', helvetica, arial, sans-serif;" data-0="opacity:0" data-165p="opacity:0; margin-top:30px" data-170p="opacity:1; margin-top:30px" data-230p="opacity:0; margin-top:-20px"> Qo bucoyop hehos mi adaqimu gahinag orizam ieniecike votag! </p>
+</div>
+</div>
 
 </div>
+
+
+
+
+
+<div class="showcase3">
+<div class="img_5" >
+
+<div class="info_3">
+<h2 style="color:#00ef9d;font-family:sans-serif;font-size:31px;font-weight: bold;"  data-0="opacity:0" data-220p="opacity:0; margin-top:30px" data-230p="opacity:1; margin-top:30px" data-250p="opacity:0; margin-top:-20px"> My Twitter Followers</h2>
+
+<p style="color:#BBB;font-size:20px;font-family:'Lato', helvetica, arial, sans-serif;" data-0="opacity:0" data-220p="opacity:0; margin-top:30px" data-230p="opacity:1; margin-top:30px" data-250p="opacity:0; margin-top:-20px"> Qo bucoyop hehos mi adaqimu gahinag orizam ieniecike votag! </p>
+</div>
+</div>
+
+</div>
+
 
 
 
@@ -128,7 +155,7 @@ Qo bucoyop hehos mi adaqimu gahinag orizam ieniecike votag! </p>
 
  </p>
 
-<a href="" > Download my CV </a> 
+<a href="https://www.dropbox.com/s/htr855aar15a6cn/TesterCV.pdf" > Download my CV </a> 
 
 </div>
 <div class ="img_bit">
@@ -153,7 +180,7 @@ Qo bucoyop hehos mi adaqimu gahinag orizam ieniecike votag! </p>
 <div class ="contact_container" >
 
 <h2 style="color:#00ef9d;font-size:50px;padding-top:40px;" 
-data-0="opacity:0;margin-top:-20px;" data-310p="opacity:0.2;margin-top:30px;" data-315p="opacity:1;margin-top:50px;"> Interested in working with me? </h2>
+data-0="opacity:0;margin-top:-20px;" data-345p="opacity:0.2;margin-top:30px;" data-355p="opacity:1;margin-top:50px;"> Interested in working with me? </h2>
 <a href=“mailto:shroomz.ftw@gmail.com” class="contact_link"> Send me a message </a> 
 <p class="mini_links" > Or find me on <a href="">Facebook </a> ,<a href="">Twitter </a>,<a href="">Instagram</a> and <a href="">LinkedIn </a>.</p>
 

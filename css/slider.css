@@ -1,0 +1,61 @@
+/*
+ | ------------------------------------------
+ | Glide styles
+ | ------------------------------------------
+ | Here are slider styles
+ | 
+*/
+
+.slider {
+	position: relative;
+	width: 100%;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+	
+	.slides {
+		height: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+		/* Simple clear fix */
+		overflow: hidden;
+
+		/**
+		 * Here is CSS transitions 
+		 * responsible for slider animation in modern broswers
+		 */
+		-webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		   -moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		    -ms-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		     -o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+		        transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	}
+	
+		.slide {
+			height: 100%;
+			float: left;
+			clear: none;
+		}
+
+
+	
+	.slider-nav {
+		position: absolute;
+		bottom: 0;
+	}
+
+		.slider-nav__item {
+			width: 12px;
+			height: 12px;
+			float: left;
+			clear: none;
+			display: block;
+			margin: 0 5px;
+			background: #fff;
+			border: 1px solid #999;
+		}
+
+				.slider-nav__item:hover { border-color: #00bf9c; }
+				.slider-nav__item--current { background: #00edc2; border-color: #00bf9c;}

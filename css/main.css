@@ -155,10 +155,6 @@ height:60%;
 
 .midcontainer img {
 padding-top: 40px;
-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-filter: gray; /* IE6-9 */
--webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-
 
 }
 
@@ -184,10 +180,10 @@ color: #BBB;
   overflow: hidden;
   padding-top: 10px;
   width: 100%;
-  height: 1670px;
-  background-image: linear-gradient(45deg, #00ef9d, #00ecd3);
-/*  border-bottom: 1px solid #00ef9d;
-*/
+  height: 1770px;
+  background-color:#FCF7FA;
+   border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .showcase1 {
@@ -195,6 +191,11 @@ color: #BBB;
   width: 100%;
   height: 580px;
   background-color:#fff; 
+
+}
+
+.showcase1 li{
+list-style: none;
 
 }
 .img_1{
@@ -236,9 +237,6 @@ left: 858.0714285714286px;
 .img_2{
 width: 663px;
 height: 387px;
-background: url('../images/bubble.png');
-background-size: cover;
-background-position: center center;
 margin-left: 580px;
 padding: 1px;
 overflow: hidden;
@@ -275,9 +273,6 @@ right: 858.0714285714286px;
 .img_3{
 width: 663px;
 height: 387px;
-background: url('../images/myTFM.png');
-background-size: cover;
-background-position: center center;
 margin-right: 580px;
 padding: 1px;
 overflow: hidden;
@@ -305,8 +300,10 @@ left: 910.0714285714286px;
   
   width: 100%;
   height: 380px;
-  background-color:#fff;
+  background-color:#FCF7FA;
   padding-top: 40px; 
+  border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 
 }
 
@@ -443,6 +440,8 @@ color:#00ef9d;
 color: #1abc9c;
 transition: all 0.3s ease-in-out;
 }
+
+
 
 #typed-cursor{
     opacity: 1;

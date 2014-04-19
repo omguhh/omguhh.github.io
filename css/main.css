@@ -184,9 +184,10 @@ color: #BBB;
   overflow: hidden;
   padding-top: 10px;
   width: 100%;
-  height: 1270px;
+  height: 1670px;
   background-image: linear-gradient(45deg, #00ef9d, #00ecd3);
-
+/*  border-bottom: 1px solid #00ef9d;
+*/
 }
 
 .showcase1 {
@@ -233,14 +234,15 @@ left: 858.0714285714286px;
 
 
 .img_2{
-width: 100%;
-height: 100%;
-background: url('../images/sf.png');
+width: 663px;
+height: 387px;
+background: url('../images/bubble.png');
 background-size: cover;
 background-position: center center;
-margin: 0 auto;
+margin-left: 580px;
 padding: 1px;
-overflow: hidden
+overflow: hidden;
+
 
 }
 .info_2 {
@@ -271,14 +273,15 @@ right: 858.0714285714286px;
 
 
 .img_3{
-width: 100%;
-height: 100%;
-background: url('../images/sf.png');
+width: 663px;
+height: 387px;
+background: url('../images/myTFM.png');
 background-size: cover;
 background-position: center center;
-margin: 0 auto;
+margin-right: 580px;
 padding: 1px;
-overflow: hidden
+overflow: hidden;
+
 
 }
 .info_3 {
@@ -294,7 +297,7 @@ margin-top: 40px;
 position: fixed;
 overflow: hidden
 margin-top: 26.542056074766357px;
-left: 858.0714285714286px;
+left: 910.0714285714286px;
 }
 
 
@@ -492,3 +495,6 @@ transition: all 0.3s ease-in-out;
     100% { opacity: 1; }
 }
 
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }

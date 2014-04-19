@@ -299,11 +299,11 @@ left: 910.0714285714286px;
 .about_me {
   
   width: 100%;
-  height: 380px;
+  height: 390px;
   background-color:#FCF7FA;
-  padding-top: 40px; 
+  padding-top: 20px; 
   border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
 }
 
@@ -313,7 +313,7 @@ float: left;
   width: 45%;
   height: 300px;
   padding-left: 50px;
-  padding-top: 20px;
+  padding-top: 10px;
 
 }
 

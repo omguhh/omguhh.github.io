@@ -1,0 +1,111 @@
+/* TIMELINE */
+
+.timeline {
+ position: relative; 
+ padding-left: 122px; 
+ padding-bottom: 8px;
+	}
+.timeline h2 {
+position: relative; 
+margin-bottom: 2em;
+
+		}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+display: block; 
+font-size: 50px; 
+position: absolute; 
+top: -17px; 
+left: -48px; 
+width: 86px; 
+line-height: 78px; 
+margin: 0;  
+z-index: 120;
+	}
+.timeline h2 [class^="icon-"]:before, .timeline h2 [class*=" icon-"]:before, .timeline h2 i.fa:before {
+margin:0; 
+
+	}		
+.event {
+	position: relative;
+	padding: 26px 32px; 
+	margin-bottom: 4em; 
+	background: #ffffff; 
+	border: 1px solid #DDE4E6; 
+	left:50px;
+	
+	}
+.event:after,
+.event:before {
+ 	right: 100%; 
+ 	top: 50%; 
+ 	border: solid transparent; 
+ 	content: " ";
+ 	height: 0; 
+ 	width: 0; 
+ 	position: absolute; 
+  	pointer-events: none;
+	}
+.event:after {
+ 	border-right-color: #ffffff; 
+ 	border-width: 10px; 
+ 	margin-top: -10px;
+	}
+.event:before {
+ 	border-right-color: #DDE4E6; 
+ 	border-width: 15px; 
+ 	margin-top: -15px;
+	}
+	.event .date {
+		position: absolute; 
+		top: 45%; 
+		margin-top: -24px; 
+		left: -82px; 
+		width: 68px; 
+		line-height: 58px; 
+		text-align: center; 
+		background: #d0d4ec; 
+		display: block; 
+		z-index: 120; 
+		color: #fff; 
+		border-radius: 50%; 
+		border: 5px solid #FFF; 
+		font-family: Oswald; 
+		font-weight: 400;
+		}
+	.event.current .date {
+		border-color: #a2a9fe;
+		outline: 1px solid #FFF; 
+		background-color: #a2a9fe;
+		border-radius: 50%;
+		}
+	.timeline + .timeline .event:last-child p:before {
+		height: 76%
+		}
+	.event h4 {
+		font-weight: 400; 
+		margin: 0; 
+		padding: 0;
+		color: #a2a9fe;
+		}
+	.event h5 {
+		margin: 0; 
+		padding: 0 0 .3em 0; 
+		font-size: 0.9em; 
+		text-transform: uppercase; 
+		font-weight: 800; 
+		color: #d1dbdc;
+		}
+	.event p {
+		margin: .6em 0 .2em 0
+		}
+	.event p:before {
+		display: block; 
+		content: ""; 
+		position: absolute; 
+		top: -30px; 
+		left: -47px; 
+		height: 160%; 
+		width: 4px; 
+		background: #DDE4E6;
+		}

@@ -1,24 +1,23 @@
 /* TIMELINE */
 
 .timeline {
- position: relative; 
- padding-left: 122px; 
+
  padding-bottom: 8px;
 	}
 .timeline h2 {
 position: relative; 
-margin-bottom: 2em;
+margin-bottom: 1em;
 
 		}
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.timeline h2 [class^="icon-"], .timeline h2 [class*=" icon-"], .timeline h2 .fa {
 display: block; 
-font-size: 50px; 
+font-size: 55px; 
 position: absolute; 
-top: -17px; 
-left: -48px; 
+top: -15px; 
+left: -87px; 
 width: 86px; 
-line-height: 78px; 
+padding-right: 10px;
 margin: 0;  
 z-index: 120;
 	}
@@ -32,7 +31,7 @@ margin:0;
 	margin-bottom: 4em; 
 	background: #ffffff; 
 	border: 1px solid #DDE4E6; 
-	left:50px;
+	/*left:50px;*/
 	
 	}
 .event:after,
@@ -109,3 +108,37 @@ margin:0;
 		width: 4px; 
 		background: #DDE4E6;
 		}
+
+		@media screen and (max-width: 908px) { 
+/* timeline */
+	.timeline {
+		padding-left: 0; 
+		}
+	.timeline h2 [class^="icon-"], .timeline h2 [class*=" icon-"], .timeline h2 .fa {
+		display:none;
+		}
+	.event {
+		padding: 16px; margin-top: 104px;
+		}
+	.event:first-of-type {
+		margin-top: 116px; 
+		}
+	.event:first-of-type .date {
+		top: -74px; 
+		}
+	.event:before, .event:after {
+		display: none; 
+		}
+	.event .date {
+		top: -64px; left: 50%; margin-left: -32px; 
+		}
+	.timeline h2, .event h4, .event h5 {
+		text-align: center; 
+		}
+	.event p:before {
+		left: 50%; z-index: -1; 
+		}
+	.timeline .event:last-child p:before {
+		height: 100%;
+		}
+	

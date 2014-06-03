@@ -1,0 +1,35 @@
+#header1 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 1s;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+
+}
+
+#header2 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 2s;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 2s;
+}
+
+/*#desc_animation {
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -ms-animation-duration: 3s;
+  -ms-animation-delay: 2s;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 2s;
+
+}*/

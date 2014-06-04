@@ -17,8 +17,6 @@
     <link href="css/timeline.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/animation_fonttello.css">
-
-    <link rel="stylesheet" href="css/navigataur.css">
     <link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" />
 
     <!-- Custom Google Web Font -->
@@ -52,38 +50,37 @@
 });
 </script>
 
-
-<script type="text/javascript">$(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash,
-        $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});</script>
 </head>
 
 <body>
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
 
-            <input type="checkbox" id="toggle" />
-<div>
-    <label for="toggle" class="toggle" data-open="Menu" data-close="Close Menu" onclick></label>
-    <ul class="menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>     
-      <li><a href="#portfolio">Portfolio</a></li>  
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+<ul class="nav navbar-nav" style="font-family: 'Oswald', sans-serif;font-weight:100;letter-spacing: .5px;text-transform:uppercase;">
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#resume">Resume</a>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
@@ -143,7 +140,7 @@
                 <div class="col-lg-12">
                 <h2 class="tweets_header"> Latest Tweets </h2> 
                     <div class="clearfix"></div>
-                     <p id="tweets" style="background-color:#d0d4ec;padding:20px;"></p>
+                     <p id="tweets" style="background-color:#d0d4ec;"></p>
 <script> twitterFetcher.fetch('472802843892523008', 'tweets',1, true, false, true, '', false); </script>
 
                 </div>

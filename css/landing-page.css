@@ -29,7 +29,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	padding-top: 10px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 10px;
 	color: #f8f8f8;
-	background-image: linear-gradient(45deg, #d0d4ec, #a2a9fe);
+	background-image: linear-gradient(95deg, #b9bdf5, #a2a9fe);
 	background-size: cover;
 	text-align: center;
 }
@@ -128,43 +128,14 @@ right: 25%;
 
 .content-section-a {
 	background-color: #fff;
-	padding: 30px 0;
-}
-
-.content-section-b {
-/*	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;*/
-	background-color: #fff;
 	padding: 50px 0;
 }
 
-.content-section-c {
-/*	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;*/
-	background-color: #fff;
-
-
+.content-section-b {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
 }
-.content-section-d {
-/*	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;*/
-
-	/*padding-left: 50px;*/
-}
-.content-section-e {
-/*	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;*/
-	background-color: #fff;
-	
-}
-
-.content-section-f {
-/*	border-top: 1px solid #e7e7e7;
-	border-bottom: 1px solid #e7e7e7;*/
-	background-color: #fff;
-
-}
-
 
 .section-heading {
 	margin-bottom: 30px;
@@ -260,10 +231,6 @@ right: 25%;
 	top: 20%;
 	right: 75%;
 	}	
-
-		.intro-message > h1 {
-		font-size: 5.5em;
-	}
 }
 
 
@@ -280,10 +247,6 @@ right: 25%;
 	top: 20%;
 	right: 15%;
 	}	
-
-	.intro-message > h1 {
-		font-size: 4.9em;
-	}
 }
 footer {
 	background-color: #f8f8f8;

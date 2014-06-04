@@ -3804,7 +3804,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
+    background-color:#000;
     border: 0;
     box-shadow: none;
   }

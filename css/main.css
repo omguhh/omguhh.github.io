@@ -50,6 +50,8 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 }
 
+.content-section-b [class^="timePosted"]{font-size: 1em;text-transform: lowercase;color: #959ce2;}
+
 .content-section-b  a {
 color:#a2a9fe;
 }
@@ -229,6 +231,12 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 	
 }
+
+.twitter_reply_icon,.twitter_retweet_icon,.twitter_fav_icon {
+	display:none;
+}
+
+
 .actual_description	{
 
 color: #393b45;

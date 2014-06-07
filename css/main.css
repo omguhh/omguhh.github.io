@@ -19,6 +19,8 @@ ul li {
 
 }
 
+a {color: #a2a9fe;}
+
 /*
 .about_me_header::after  {
 
@@ -309,20 +311,13 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 border-bottom: 1px solid #e7e9e1;
 }
-/*.social_header:before{
-content: "";
-position: absolute;
-background: #e7e9e1;
-width: 42%;
-height: 4px;
-top: 18%;
-left: 58%;
-}*/
+
 .social_deets{	text-align: center;}
 .social_deets h2 {	padding-top: 50px;}
-.social_deets a { text-decoration: none;  filter: grayscale(100%); -webkit-filter: grayscale(100%);  /* For Webkit browsers */   filter: gray;  /* For IE 6 - 9 */    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */}
+.social_deets a { text-decoration: none; }
 
 .social_deets [class^="icon-"]:before, [class*=" icon-"]:before {
+
 
 display: inline-block; 
 font-size: 1em;
@@ -332,29 +327,12 @@ text-align: center;
 position: relative;
 top: 0px;
 left: 0px;
-background-color: #e7e9e1;
+background-color: #a2a9fe;
 border-radius: 50%; 
 border: 5px solid #fff; 
-
 }
 
-.social_deets [class^="icon-facebook"]:before{
-	background-color:#3B5998;
-}
 
-.social_deets [class^="icon-tumblr"]:before{
-	background-color:#00225F;
-}
-
-.social_deets [class^="icon-twitter"]:before{
-	background-color:#4099FF;
-}
-
-.social_deets [class^="icon-linkedin"]:before{
-	background-color:#0e76a8;
-}
-
-.social_deets a:hover { filter: grayscale(0%);    -webkit-filter: grayscale(0%);    filter: none;}
 
 /**************SKILL BAR************/
 

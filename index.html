@@ -2,382 +2,487 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Yasmine Fadel</title>
+    <title>Yasmine Fadel - Fullstack Developer </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/animation_fonttello.css">
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/navigataur.css">
-    <link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" />
+    <!-- Custom CSS -->
+    <link href="css/test.css" rel="stylesheet">
 
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Add custom CSS here -->
-    <link href="css/landing-page.css" rel="stylesheet">
-    <script type="text/javascript" src="js/twitterFetcher_v10_min.js">   </script>
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/typed.js"></script>
-    <script src="js/modernizr.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 
-    <script>
-    jQuery(document).ready(function(){
-    jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar-bar').animate({
-            width:jQuery(this).attr('data-percent')
-        },6000);
-    });
-});
-    </script>
-<script>
-  
- $(document).ready(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-</script>
-
-
-<script type="text/javascript">$(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash,
-        $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});</script>
 </head>
 
-<body>
+<body id="page-top" class="index">
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-
-            <input type="checkbox" id="toggle" />
-<div>
-    <label for="toggle" class="toggle" data-open="Menu" data-close="Close Menu" onclick></label>
-    <ul class="menu">
-    
-      
-      <li><a href="#contact">Contact</a></li> 
-      <li><a href="#portfolio">Portfolio</a></li>   
-      <li><a href="#resume">Resume</a></li>  
-      <li><a href="#about">About</a></li> 
-
-      
-    </ul>
-</div>
-        </div>
-        <!-- /.container -->
+            <header>
+                <a href="/" >
+                    <img src="img/logo.png" class="img-centered" style="display:inline-block;width: 100px;float:left" alt="Yasmine Fadel - Full Stack Developer">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="nav-work" href="#projects" style="text-decoration: none;">
+                                <span class="text">Work</span>
+                                <span class="line color-line"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-about" href="#about" style="text-decoration: none;">
+                                <span class="text">About</span>
+                                <span class="line color-line"></span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a class="nav-contact page-scroll" href="#contact" style="text-decoration: none;">
+                                <span class="text">Contact</span>
+                                <span class="line color-line"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            </div>
+        <!-- /.container-fluid -->
     </nav>
 
-    <div class="intro-header">
+    <!-- Header/About Me -->
 
-        <div class="container">
-
+        <div class="about about-home container" id="about">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1 class="animated fadeInDown" id="header1">I'm Yasmine</h1>
-                        <h3 class="animated fadeInDown" id="header2">code monkey & part-time hero</h3>
-                 </div>
+                    <!--ABOUT-->
+                    <div class="section-inside">
+                        <img class="img-responsive" style="padding-top: 115px;padding-bottom: 20px;margin: 0 auto;" src="img/logo2.png" alt="Yasmine Fadel - Logo">
+
+                        <div class="text">
+                            <p>I'm a Dubai-based fullstack developer and designer with a passion for user experience and technology.</p>
+                            <p>I'm a recent computer science graduate with a background in design. <br> I've interned at a digital agency that gave me experience in digital design for web, mobile applications and interactive installations.I've also entered(and continue to enter) a variety of development competitions/hackathons to learn more and develop faster.
+                                I've also developed applications on Android and published a few on Windows.</p>
+                            <p>I value making things people use and making technology more involving and easy to use/play with for everyone.</p>
+                        </div>
+                        <div class="box">
+                        <a href="https://www.dropbox.com/s/50ok7sop7ak7sue/Yasmine_Fadel_CV.pdf?dl=0" class="btn-7" target="_blank">Download My CV<i class="fa fa-long-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
 
-    </div>
+<!--stuff I do -->
+    <div class="stuff stuff-home container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="section-inside">
+                  <div class="col-lg-12">
+                      <h3 class="decorated"><span>Some of the stuff I do</span></h3>
+                  </div>
+              </div>
+        <div class="row">
+        <div class="col-lg-3"> <img src="img/portfolio/mobile.png" alt="WordPress Development" class="img-centered"/>
+            <h2>Mobile Development</h2>
+            <p>I've developed two Android applications using Java and developed and published one Windows phone application using C#.</p>
+        </div>
+        <div class="col-lg-3">
+        <img src="img/portfolio/frontend.png" alt="Frontend Development" class="img-centered"/>
+            <h2>Frontend Development</h2>
+            <p>I build websites with HTML5, CSS3, jQuery and a variety of frameworks/libraries to learn and build responsive and non-responsive sites fast.</p>
+        </div>
+        <div class="col-lg-3">
+            <img src="img/portfolio/eggs.png" alt="WordPress Development" class="img-centered"/>
+                <h2>Eat</h2>
+            <br>
+            <p>Lots and lots.</p>
+        </div>
+            <div class="col-lg-3">
+            <img src="img/portfolio/responsive.png" alt="Responsive Web Design" class="img-centered"/>
+                <h2>Responsive Web Development</h2>
+                <p>Most sites I build will always fit the size of the screen it&#8217;s viewed on offering all users a great experience.</p>
+            </div>
+         </div>
+              </div>
+  </div>
+</div>
+</div>
 
+    <!-- Portfolio Grid Section -->
+    <div class="projects projects-home container" id="projects">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-inside">
+                    <div class="col-lg-12">
+                        <h3 class="decorated"><span>Featured Projects</span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-lg-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/whatacutie.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/letsgo.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pulse.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/snapple.png" class="img-responsive" alt="">
+                    </a>
+                </div>
 
+                    <div class="col-lg-6 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/helga.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
 
-<div class="content-section-a">
-
-        <div class="container" >
-
+                    <div class="col-lg-6 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/portfoliov2.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+   </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="contact contact-home container" id="contact">
             <div class="row">
                 <div class="col-lg-12">
-                <h2 class="about_me_header" id="about" > A little bit about me </h2> 
-                    <div class="clearfix"></div> <br>
-                     <div class="col-lg-6">
-                    <p class="animated fadeInRight" id="desc_animation">Hello there! I'm  <span class="element"></span><br \>
-                     I'm a second year computer science student at Heriot Watt University.
-                    I value making things people use, and I like tinkering with self-directed projects whilst maintaining a simple and direct UI. I have experience with various frameworks and recently developed an android application.  <br /><br />
-                     When I'm not programming,I play around with Photoshop,watch TV,eat a lot and play the harominca.
-                    I also enjoy taking part in competitions and recently won first place at GISWORX 2014 Mobile Developer challenge,and I look forward to joining plenty more.
-</p> 
-
-
-</div>
-<div class="col-lg-6">
-<img class="img-responsive" id="slideshow_img" src="img/038.png" alt="" >
-                </div>
-                </div>
-
-                </div>
-
-
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
- 
-<div class="content-section-b">
-
-        <div class="container" >
-
-            <div class="row">
-                <div class="col-lg-12">
-                <h2 class="tweets_header"> Latest Tweets </h2> 
-                    <div class="clearfix"></div>
-                     <p id="tweets" style="background-color:#d0d4ec;padding:20px;"></p>
-<script> twitterFetcher.fetch('472802843892523008', 'tweets',1, true, false, true, '', false); </script>
+                    <!--ABOUT-->
+                    <div class="section-inside">
+                        <div class="social-buttons">
+                            <div class="col-lg-3">
+                            <a href="mailto:yasmine.m.f@live.co.uk" class="social-button envelope" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            </div>
+                            <div class="col-lg-3">
+                            <a href="https://ae.linkedin.com/in/yasminef" class="social-button linkedin" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            </div>
+                            <div class="col-lg-3">
+                            <a href="https://twitter.com/omguhh" class="social-button twitter" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            </div>
+                            <div class="col-lg-3">
+                            <a href="https://github.com/omguhh" class="social-button github" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            </div>
+                        </div>
 
                 </div>
 
             </div>
         </div>
-        <!-- /.container -->
         </div>
-    </div>
-    <!-- /.content-section-a -->
-    <div class="content-section-c">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5" >
-                    <div class="clearfix"></div>
-                    <h2 class="resume_header" id="resume"> RESUMÉ </h2> 
-                    <div class="clearfix"></div>
-                    <div class="timeline">
-                    <h2 style="color:#a2a9fe;"> <i class="icon-note"></i> TECHNICAL EXPERIENCE </h2>
-                    <div class="event current">
-                    <span class="date"> 2014 </span>
-                    <h4> Back & Front End Developer </h4>
-                    <h5>GISWORX Mobile Developer Challenge </h5>
-                    <p>
-                    For the developer challenge,my teammate and I developed Let's Go! - an android application designed to help tourists get around Dubai by showing them a list of popular places and providing them a schedule that acts as their own personal tourguide.<br/> I was in charge of the backend development (such connecting with the routing service & displaying it on the map) and the UI design. </p>
-                    </div>
-
-                   <div class="event">
-                <span class="date"> 2014 </span>
-                    <h4>Webmaster </h4>
-                    <h5>Heriot Watt University </h5>
-                    <p>
-                    Currently incharge of maintaining,upgrading and enhancing the Student Council website,from both the Back end & Front end bits using wordpress. <br/>If you'd like to see it,just ask,I'd be happy to show you!</p>
-                    </div>
-
-                 <div class="event">
-                <span class="date"> 2013 </span>
-                    <h4>Front End Web Developer </h4>
-                    <h5>Project ROMO </h5>
-                    <p>
-                    Worked(with a team)to develop a website that displayed tweets in realtime for a ROMO project that involved two ROMO robots racing each other based on the number of tweets each robot was recieving. The site's been taken down,but you could read more about the project <a href="http://project-romo.tumblr.com/"> here! </a> </p>
-                    </div>
-
-    <h2 class="timeline" style="color:#a2a9fe;"><i class="icon-graduation-cap"></i> EDUCATION </h2>
-                     <div class="event current">
-                <span class="date"> 2012-2015 </span>
-                    <h4>Working towards a BSc in Computer Systems </h4>
-                    <h5>Heriot Watt University </h5>
-                    <p>
-            Aside from being a computer science student,I'm also part of the Technology & Gaming club.
-            I've been awarded a certificate of merit for maintaining a high GPA.
-            
-</p>
-                    </div>
-                </div>
-                </div>
- <div class="content-section-d">
-
-        <div class="container">
-
-               <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                     <h2 class="skills_header"> skills </h2> 
-                    <div class="clearfix"></div> <br>
-                   <div class="skillbar clearfix " data-percent="80%">
-    <div class="skillbar-title" style="background: #a2a9fe;"><span>HTML5/CSS3</span></div>
-    <div class="skillbar-bar" style="background: #a2a9fe;"></div>
-    <div class="skill-bar-percent">80%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="72%">
-    <div class="skillbar-title" style="background: #a2a9fe;"><span>Java</span></div>
-    <div class="skillbar-bar" style="background: #a2a9fe;"></div>
-    <div class="skill-bar-percent">72%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="81%">
-    <div class="skillbar-title" style="background: #a2a9fe;"><span>Lua</span></div>
-    <div class="skillbar-bar" style="background: #a2a9fe    ;"></div>
-    <div class="skill-bar-percent">81%</div>
-</div> 
-
-<div class="skillbar clearfix " data-percent="70%">
-    <div class="skillbar-title" style="background: #a2a9fe;"><span>jQuery</span></div>
-    <div class="skillbar-bar" style="background: #a2a9fe;"></div>
-    <div class="skill-bar-percent">70%</div>
-</div> <!-- End Skill Bar -->
-
-<div class="skillbar clearfix " data-percent="65%">
-    <div class="skillbar-title" style="background: #a2a9fe;"><span>PHP</span></div>
-    <div class="skillbar-bar" style="background: #a2a9fe    ;"></div>
-    <div class="skill-bar-percent">69%</div>
-</div> <!-- End Skill Bar -->
-
-
-                </div>
-
-
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                     <h2 class="download_my_cv"> download my cv </h2> 
-                    <div class="clearfix"></div> <br>
-                    <p>Feel free to look through my CV! </p>
-                  <a href="https://www.dropbox.com/s/50ok7sop7ak7sue/Yasmine_Fadel_CV.pdf" > <button class="download_cv_button"> download </button></a> 
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-</div>
-</div>
-
-    </div>
-    <!-- /.content-section-c -->
-
-
-<div class="content-section-e">
-
-        <div class="container" >
-
-            <div class="row">
-                <div class="col-lg-12 ">
-                <h2 class="portfolio_header" id="portfolio"> portfolio </h2> 
-                <div class="clearfix"></div> 
-                <div class="flexslider">
-                <ul class="slides" style="text-align:center;">
-                <li>    
-                 <div class="col-lg-5 col-sm-6" style="padding-top:90px;padding-left:70px;">     
-    <p class="header_description">Let's Go</p>  
-    <p class="actual_description">New to Dubai? Looking for places you haven't visisted yet? If yes,then check out Let's Go! It's an android application that makes use of the ARCGIS SDK & OSM to help the user get around Dubai by providing directions with different transport modes (Walking,Public Transit and by Car). It also features a scheduling section where the user can "pin" a location they want to visit and strike it out once they've visited. 
-   <br /> <a href="https://www.dropbox.com/s/6w6n444c7h8staw/UPDATEDLetsGo.apk" >Get the APK here!</a></p>     
-
-
-
-</div>
-
-<div class="col-lg-3 col-lg-offset-2 col-sm-6">
-<img class="img-responsive" id="slideshow_img" src="http://i.imgur.com/cLAlmDS.jpg" alt="" style="width:256px;">
-                </div>
-                           </li> 
-
-
-                <li> <div class="col-lg-5 col-sm-6" style="padding-top:90px;padding-left:70px;">     
-    <p class="header_description">Portfolio 2.0</p>  
-    <p class="actual_description">I wanted to update my site and play around with responsive design using bootstrap. I also wanted to maintain a nice flat look that showcased what I can do in a limited amount of time and I believe I achieved that with this new look! I used CSS3,JQuery & HTML5 and stuck to the standards.  <p>     
-
-
-
-</div>
-
-<div class="col-lg-4 col-lg-offset-2 col-sm-6">
-<img class="img-responsive" id="slideshow_img" src="http://i.imgur.com/iRrtJYf.png" alt=""  style="padding-top:100px;">
-                </div>
-                             </li> 
-
-
-
-            </ul>
-    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-
-<div class="content-section-f">
-
-        <div class="container" >
-
-            <div class="row">
-               <div class="col-lg-6" >
-                <h2 class="contact_header" id="contact"> WANNA TALK? </h2> 
-                    <div class="clearfix"></div> <br>
-                 
-                  <div class="contact_deets">
-                    <p> <i class="icon-mail"></i> yasmine.m.f@live.co.uk </p>
-                    <p> <i class="icon-home"></i> Dubai,UAE </p>
-                    </div>
-                </div>
-        <div class="col-lg-6">
-                <h2 class="social_header"> PLACES YOU CAN FIND ME </h2> 
-                    <div class="clearfix"></div> <br>
-                      <div class="social_deets">
-                   <a href="https://www.facebook.com/profile.php?id=788791982"> <i class="icon-facebook"></i> </a>
-                   <a href="https://superpipperoni.tumblr.com"> <i class="icon-tumblr"></i> </a>
-                   <br>
-                   <a href="https://twitter.com/omguhh"> <i class="icon-twitter-bird"></i> </a>
-                   <a href="#"> <i class="icon-linkedin"></i> </a>
-</div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-<footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <p class="copyright text-muted small">All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
+        <p class="footer_copy">© Yasmine Fadel 2015</p>
     </footer>
 
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
-    </body>
-<script>
+    <!--1.Fittbug 2.Pulse 3.Snapple 4.Letsgo-->
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Fittbug</h2>
+                            <hr class="star-primary">
+                            <iframe width="680" height="515" src="https://www.youtube.com/embed/cgJw-shCDfc" frameborder="0" allowfullscreen></iframe>
+                            <p>
+                                A health/lifestyle application that aims to make you a better version of yourself by using
+                                gamification and context aware location notifications. Fittbug monitors where you are and
+                                recommends healthy alternative places to eat, and if it detects that you're eating in that
+                                area you get rewarded in the form of coupons or special offers from sponsors. This application
+                                earned a place in the Top 10 applications at the GITEX Technology Week of 2014.
+                                I designed parts of the interface and also developed it for Android.
+                            </p>
+                            <ul class="list-inline item-details">
 
-    $(function(){
-        $(".element").typed({
-        strings: ["a developer.", "a part-time hero.","Yasmine."],
-        typeSpeed: 40
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lets Go</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/letsgo.png" class="img-responsive img-centered" alt="">
+                            <p>New to Dubai? Looking for places you haven't visisted yet? If yes,then check out Let's Go! It's an android application that makes use of the ARCGIS SDK &amp; OSM to help the user get around Dubai by providing directions with different transport modes (Walking,Public Transit and by Car). It also features a scheduling section where the user can "pin" a location they want to visit and strike it out once they've visited.
+                           This application won first place at the GISWORX 2014 Developer Challenge.
+                            </p>
+
+                           <ul class="list-inline item-details">
+                                <li>App Link:
+                                    <strong><a href="https://www.dropbox.com/s/6w6n444c7h8staw/UPDATEDLetsGo.apk">Get the APK here</a>.
+                                    </strong>
+                                </li>
+
+                            <li>Video Demo:
+                                <strong><a href="https://www.dropbox.com/s/fttwgze58nkynvd/LetsGo.mp4?dl=0">Watch it here</a>.
+                                </strong>
+                            </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Pulse</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/pulse.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                Made for the Decode Hackathon, this web application is aimed for people who want
+                                to know where the most interesting place in Dubai is right now. Using social media trends
+                                from Facebook and Twitter, we have a bubble that grows and grows according to the location
+                                of the tweets/posts, showing the most happening place in Dubai is - showing the 'Pulse' of Dubai.
+                                If you want to see a demo,message me! I'd love to show you.
+                            </p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Snapple</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/gameplay.png" class="img-responsive img-centered" alt="">
+                            <p>
+                            A java based desktop game made using LibGDX during the WISTEM hackathon. It's based on the
+                            idea of Scrabble and Snake,where the player must chase after letters to make up a word, the larger
+                            the word the more points you get. I designed and did the front-end development and debugging for the project.Our team one Most Educational Game
+                            for the hackathon.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Github Link:
+                                    <strong><a href="https://github.com/omguhh/Pithon">Link</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Helga and the Zoinks</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/helga.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                An endless runner game like Monster Dash made by using the Corona SDK. I designed the art for this game
+                                and also programmed it alongside my partner. By scrolling through the sprites I've made it gave the appearance of a large and
+                                endless game. The ground was also randomly created, adding replayability and enjoyability to it.
+                                Because I used the Corona SDK, this could easily be ported to Android,IOS devices and Windows platforms.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Video Demo:
+                                    <strong><a href="https://www.dropbox.com/s/028o2urzs2hefvz/Untitled.mp4?dl=0">Link</a>
+                                    </strong>
+                                </li>
+
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true" >
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Portfolio V2</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/portfoliov2.png" class="img-responsive img-centered" alt="">
+                            <p> For an older version of my site, I wanted to update my site and play around with responsive design using bootstrap. I also wanted to maintain a nice flat look that showcased what I can do in a limited amount of time and I believe I achieved that with this new look! I used CSS3,JQuery & HTML5 and stuck to the standards.  </p>
+                            <ul class="list-inline item-details">
+                                <li>Demo:
+                                    <strong><a href="http://startbootstrap.com">Link</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <script type="text/javascript">$(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+            var target = this.hash,
+                    $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
         });
-    });
-    </script>
+    });</script>
+</body>
 
-            <script type="text/javascript">
-            skrollr.init();
-        </script>
 </html>

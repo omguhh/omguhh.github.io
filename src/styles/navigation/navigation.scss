@@ -1,0 +1,47 @@
+.navbar-nav .nav-item+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  color: #373737;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+
+ &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: #373737;
+    -webkit-transition: all .1s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+
+  &:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+#test {
+  position: relative;
+}
+#test:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transform: skewY(-12deg);
+  transform: skewY(-12deg);
+  background: #f6f9fc;
+}

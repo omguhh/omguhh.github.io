@@ -1,10 +1,74 @@
 doctype html
 html
     head
-        style
-            include ../../app/css/styles.css
-    body
-    .header__wrapper
-        .header__logo
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet")
+        link(rel="stylesheet" href="../app/css/styles.css")
+        script(rel="script" src="http://tympanus.net/Tutorials/ShapeHoverEffectSVG/js/snap.svg-min.js")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
 
-        .header__navigation
+    body
+        nav.navbar
+            button.navbar-toggler.hidden-sm-up(type='button', data-toggle='collapse', data-target='#responsiveCollapse')
+                | ☰
+            #responsiveCollapse.collapse.navbar-toggleable-xs
+                // class .navbar-toggleable-*
+                a.navbar-brand(href='#')
+                    img(src="http://omguhh.github.io/img/logo.png")
+                ul.nav.navbar-nav
+                    li.nav-item.active
+                        a.nav-link(href='#') Work
+                    li.nav-item
+                        a.nav-link(href='#') About
+                    li.nav-item
+                        a.nav-link(href='#') Contact
+        .container
+            .row
+                .section.intro__wrapper.col-md-12
+                    .col-md-6.col-sm-12.intro__left
+                        p
+                            | Lorem
+                            br
+                            | Ipsum
+                    .col-md-6.col-sm-12.intro__right
+                        p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            .row.demo-2#test
+                section#grid.grid.clearfix
+                    -for (var i=0; i<6; i++)
+                        a(href='#', data-path-hover='m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z' class="col-md-4")
+                            figure
+                                img(src='http://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/4.png')
+                                svg(viewbox='0 0 180 320', preserveaspectratio='none')
+                                    path(d='m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z')
+                                figcaption
+                                    h2 Lorem Ipsum
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    button View
+            div(style="position: relative;")
+                .stripes
+                    span
+                    span
+                    span
+                    span
+
+script.
+    (function() {
+        function init() {
+            var speed = 330,
+                easing = mina.backout;
+            [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                    pathConfig = {
+                        from : path.attr( 'd' ),
+                        to : el.getAttribute( 'data-path-hover' )
+                    };
+                el.addEventListener( 'mouseenter', function() {
+                    path.animate( { 'path' : pathConfig.to }, speed, easing );
+                } );
+                el.addEventListener( 'mouseleave', function() {
+                    path.animate( { 'path' : pathConfig.from }, speed, easing );
+                } );
+            } );
+        }
+        init();
+    })();

@@ -4,7 +4,9 @@ html
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css")
         link(href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet")
         link(rel="stylesheet" href="../app/css/styles.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
         script(rel="script" src="http://tympanus.net/Tutorials/ShapeHoverEffectSVG/js/snap.svg-min.js")
+        script(rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
         meta(name='viewport', content='width=device-width, initial-scale=1')
 
     body
@@ -26,16 +28,17 @@ html
             .row
                 .section.intro__wrapper.col-md-12
                     .col-md-6.col-sm-12.intro__left
-                        p
+                        p.wow.fadeInUp(data-wow-delay="0.1s" style="margin-bottom:-2rem")
                             | Lorem
                             br
+                        p.wow.fadeInUp(data-wow-delay="0.2s")
                             | Ipsum
-                    .col-md-6.col-sm-12.intro__right
-                        p="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                    .col-md-6.col-sm-12.intro__right.wow.fadeInUp(data-wow-delay="0.2s")
+                        p="Lorem ipsum dolor sit amet, onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
             .row.demo-2#test
                 section#grid.grid.clearfix
                     -for (var i=0; i<6; i++)
-                        a(href='#', data-path-hover='m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z' class="col-md-4")
+                        a(href='#', data-path-hover='m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z' class="col-md-4 wow fadeInUp" data-wow-delay="0.5s")
                             figure
                                 img(src='http://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/4.png')
                                 svg(viewbox='0 0 180 320', preserveaspectratio='none')
@@ -72,3 +75,19 @@ script.
         }
         init();
     })();
+
+    var wow = new WOW(
+        {
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 50,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: true,       // act on asynchronously loaded content (default is true)
+            callback: function (box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();

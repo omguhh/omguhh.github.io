@@ -1,0 +1,52 @@
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+  .grid a {
+    width: 33.333%;
+    &:nth-child(odd) {
+      margin: 0;
+    }
+    &:nth-child(3n-1) {
+      margin: 30px 0 -30px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 45em) {
+  .grid {
+    max-width: 500px;
+    a {
+      width: 50%;
+      &:nth-child(3n-1) {
+        margin: 0;
+      }
+      &:nth-child(even) {
+        margin: 30px 0 -30px 0;
+      }
+    }
+    figcaption {
+      h2 {
+        margin-bottom: 0px;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+      }
+      p {
+        margin: 0;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 27em) {
+  .grid {
+    max-width: 250px;
+    a {
+      width: 100%;
+      &:nth-child(even) {
+        margin: 0;
+      }
+    }
+  }
+}

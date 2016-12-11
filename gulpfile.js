@@ -16,8 +16,14 @@ gulp.task('pug', function () {
         .pipe(gulp.dest('app/'))
 });
 
-gulp.task('watch', ['sass','pug'], function () {
+gulp.task('scripts',function () {
+   return gulp.src('src/scripts/*.js')
+       .pipe(gulp.dest('app/scripts'));
+});
+
+gulp.task('watch', ['sass','pug','scripts'], function () {
     gulp.watch('src/styles/**/*.scss', ['sass']);
     gulp.watch('src/html/index.pug', ['pug']);
+    gulp.watch('src/scripts/*.js', ['scripts']);
 
 });

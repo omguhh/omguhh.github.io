@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio refresh :)",
+  "main": "main.js",
+  "authors": [
+    "Yasmine Fadel"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/omguhh/omguhh.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0-alpha.5",
+    "animate.css": "^3.5.2"
+  }
+}

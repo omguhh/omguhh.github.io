@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+
 body {
   font-family: 'Open Sans', sans-serif;
 
 }
+  //Dependency imports
+  @import "../../bower_components/bootstrap/dist/css/bootstrap.css";
+  @import "../../bower_components/animate.css/animate.css";
+
+  //Custom imports
   @import "navigation/navigation";
   @import "intro/intro";
   @import "stripes/stripes";

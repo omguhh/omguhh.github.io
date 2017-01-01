@@ -1,0 +1,14 @@
+.row.demo-2
+    section#grid.grid.clearfix
+        -for (var i=0; i<6; i++)
+            - var delayNum =  parseFloat("0." + i);
+            - var animationDelay =(0.5+ delayNum);
+            a(href='2.html', data-path-hover='m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z' class="col-md-4 wow fadeInUp nav next" data-wow-delay=animationDelay + "s" )
+                figure
+                    img(src='http://tympanus.net/Tutorials/ShapeHoverEffectSVG/img/4.png')
+                    svg(viewbox='0 0 180 320', preserveaspectratio='none')
+                        path(d='m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z')
+                    figcaption
+                        h2 Lorem Ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        button View

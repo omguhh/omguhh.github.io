@@ -1,0 +1,42 @@
+.funfetti {
+  position:  relative;
+  &__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &--round {
+    background-color: #ffdd00;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  &--triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ff7e00;
+  }
+  &--donut {
+    border: 5px solid #00bfff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  &--cross {
+    background: #1ec280;
+    height: 30px;
+    position: relative;
+    width: 5px;
+    &:after {
+      background: #1ec280;
+      content: "";
+      height: 5px;
+      left: -13px;
+      position: absolute;
+      top: 13px;
+      width: 30px;
+    }
+  }
+}

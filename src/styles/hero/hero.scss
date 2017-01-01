@@ -1,0 +1,21 @@
+.hero {
+  &__title {
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+  }
+  &__description {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 110px 0 0;
+  }
+  &__type__title, &__date__title {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 900;
+  }
+  &__type__tag, &__date__day {
+    font-size: 13px;
+    font-weight: 900;
+  }
+}

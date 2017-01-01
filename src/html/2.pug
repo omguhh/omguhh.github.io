@@ -5,11 +5,25 @@ html
         link(rel="stylesheet" href="../app/css/styles.css")
         script(rel="script" src="../app/scripts/require.js" data-main="scripts/main")
 
-    body#test
-        .container#barba-wrapper
+    body
+        #barba-wrapper
             .barba-container(data-prev="index.html")
-                .row
-                    p="here"
-                    a.nav.prev(href='index.html') PREV
+                .container
+                    .row
+                        .col-md-5
+                            p.hero__title Musse Picasso
+                    .row
+                        .col-md-8
+                            p.hero__description For the European Night of Museums 2015, the National Museum Picasso-Paris asked Gobelins’ students to create videos to be projected on the main facade of the museum.
+                            p.hero__description In pairs with Lorraine Sorlet, we imagined a fusion of styles combining games of shapes and deconstruction specifics to Picasso, in a modern, spatial and colorful world. About 3.000 people have attended to the projection.
+                        .col-md-4
+                            .hero__type
+                                p.hero__type__title Project
+                                p.hero__type__tag Video Mapping, 3D, Cel-Animation
+                            .hero__date
+                                p.hero__date__title Date
+                                p.hero__date__day May 2015
+
+                a.nav.prev(href='index.html') PREV
 
 

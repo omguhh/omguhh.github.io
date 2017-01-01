@@ -6,9 +6,10 @@ html
         script(rel="script" src="../app/scripts/require.js" data-main="scripts/main")
 
     body#test
-        //include navigation
-        .container#barba-wrapper
-            .barba-container(data-next="2.html")
-                include landing-page-components/intro
-                include landing-page-components/projects
+        include landing-page-components/navigation
+        #barba-wrapper
+                .barba-container(data-next="2.html")
+                    .container
+                        include landing-page-components/intro
+                        include landing-page-components/projects
 

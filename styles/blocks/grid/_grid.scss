@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 0 15px;
+  &--timeline,&--contributions {
+    padding: 10px 30px;
+    color: #ffffff;
+  }
+  &--timeline {
+    background-color:$color-primary;
+  }
+  &--contributions {
+    background-color:$color-primary-light;
+  }
+}

@@ -3,7 +3,10 @@
 @import "normalize";
 @import "utils";
 @import "blocks/typography/typography";
+@import "blocks/grid/grid";
 
-// Bomb ass styling
+//Custom styling
 @import "blocks/layout/layout";
+@import "blocks/intro/intro";
 @import "blocks/projects/projects";
+@import "blocks/list/list";

@@ -1,18 +1,18 @@
 // Font Declarations
 
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family:  'Roboto', sans-serif;
 }
 
 @font-face {
-  font-family:  'Cutive Mono', monospace;
+  font-family:  'Roboto Slab', serif;
 }
 
 //Font Variable Declarations
-$font-global: 'Cutive Mono';
-$font-headers: 'Raleway';
+$font-global: 'Roboto';
+$font-headers: 'Roboto Slab';
 
 //Font size variables
 
@@ -22,3 +22,68 @@ $font-size-xlarge: 23px;
 $font-size-xxlarge: 30px;
 $font-size-small: 12px;
 $font-size-medium: 16px;
+
+p {
+  line-height: 1.5rem;
+  margin: 10px 0;
+  color: $gray-text-color;
+}
+a {
+  color: $color-secondary;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: $font-headers;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  color: $color-primary;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+
+}
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+
+  &:before {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: $color-secondary;
+    border-radius: 5px;
+    display: block;
+    margin: 30px 0;
+  }
+}
+h3 {
+  font-size: 1.414rem;
+  margin-bottom: 1rem;
+
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}

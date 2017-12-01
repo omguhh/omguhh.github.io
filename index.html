@@ -8,39 +8,83 @@
 </head>
 <body>
 
-<section class="intro">
-    <h3> Hi, I'm Yasmine, a software engineer based in Dubai. </h3>
-    <h4> I'm currently working at Souqalmal and have worked at Icflix and Socialize. :) </h4>
-    <span>//Catch me here</span>
-    <a href="">github</a>
-    <a href="">codepen</a>
-    <a href="">twitter</a>
-    <a href="">linkedin</a>
-    <a href="">email</a>
-    <a href="">my good ol' CV</a>
-</section>
+<div class="container intro__wrapper">
+    <section class="column">
+        <h2> Hi, I'm Yasmine, a software engineer in Dubai. </h2>
+        <p>
+            If you’re looking for a frontend developer who
+            will care for every part of your project, from
+            design to user experience and writes clean,
+            maintainable, future proof code - hit me up!
+        </p>
+        <a href="">github</a>
+        <a href="">codepen</a>
+        <a href="">twitter</a>
+        <a href="">linkedin</a>
+        <a href="">email</a>
+    </section>
+    <section class="column intro">
 
-<section class="projects">
-    <article class="project__wrapper">
-        <a href="">
-            <label class="project__timestamp">{{project.timestamp}}</label>
-            <img src="{{project.thumbnail}}" class="project__thumbnail">
-            <h3 class="project__title">{{project.title}}</h3>
-            <h3 class="project__summary">{{project.summary}}</h3>
-        </a>
-    </article>
-</section>
+    </section>
+</div>
 
-<section class="contributions">
-    <h4> Projects I contribute to </h4>
-    <ul class="contributions__list">
-        <li> Habitica </li>
-        <li> Habitica </li>
-        <li> And more soon ;) </li>
-    </ul>
-</section>
+<div class="container">
+    <section class="column">
 
-<small> Made with love and cheese puffs by me! </small>
+    </section>
+    <section class="column intro">
+        <h2> Fittbug </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+        </p>
+    </section>
+</div>
+
+<div class="container">
+
+    <section class="column column--timeline">
+        <ul class="list list--timeline">
+            <li class="list__item"> Left ICFLIX, joined Souqalmal.com, sold
+                car insurance! </li>
+            <li class="list__item"> Joined ICFLIX as a Junior Software Engineer,
+                watched a bunch of movies! </li>
+            <li class="list__item"> Graduated from Heriot Watt with a BSc in
+                Computer Science </li>
+            <li class="list__item"> Graduated from Heriot Watt with a BSc in
+                Computer Science </li>
+        </ul>
+        <p>Looking for more detail? Head over to my <a href="">Linkedin. </a></p>
+    </section>
+
+    <section class="column column--contributions">
+        <h2> Open Source <br> Contributions </h2>
+        <ul class="list list--contributions">
+            <li class="list__item">
+                <a href="">
+                    Habitica
+                    <p> a11y style guide </p>
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="">
+                    Habitica
+                    <p> a11y style guide </p>
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="">
+                    Habitica
+                    <p> a11y style guide </p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
 
 </body>
 

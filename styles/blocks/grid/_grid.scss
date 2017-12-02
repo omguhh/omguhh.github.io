@@ -7,13 +7,19 @@
   flex: 1;
   padding: 0 15px;
   &--timeline,&--contributions {
-    padding: 10px 30px;
+    padding: 30px 60px;
     color: #ffffff;
+
+    background-image: url('./bg-isobar.png');
   }
   &--timeline {
     background-color:$color-primary;
   }
   &--contributions {
     background-color:$color-primary-light;
+     h2 {
+       font-weight: 500;
+      color: #ffffff;
+    }
   }
 }

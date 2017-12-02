@@ -34,5 +34,25 @@
       "title":"whatever",
       "link":"whatever"
     }
+  ],
+  "timeline": [
+    {
+      "title":"whatever",
+      "link":"whatever"
+    },
+    {
+      "title":"whatever",
+      "link":"whatever"
+    }
+  ],
+  "social": [
+    {
+      "title":"whatever",
+      "link":"whatever"
+    },
+    {
+      "title":"whatever",
+      "link":"whatever"
+    }
   ]
 }

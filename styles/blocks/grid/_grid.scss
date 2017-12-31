@@ -6,20 +6,20 @@
 .column {
   flex: 1;
   padding: 0 15px;
-  &--timeline,&--contributions {
-    padding: 30px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  &--dark {
     color: #ffffff;
-
-    background-image: url('./bg-isobar.png');
-  }
-  &--timeline {
-    background-color:$color-primary;
-  }
-  &--contributions {
-    background-color:$color-primary-light;
-     h2 {
-       font-weight: 500;
+    align-items: center;  /* Add this */
+    background-color: $color-primary;
+    h1, h2, h3, h4, h5, h6, a, p {
       color: #ffffff;
     }
+  }
+  &--patterened {
+    background-image: url('./bg-isobar.png');
+  }
+  &--full-height {
+    height: 100vh; //supported?
   }
 }

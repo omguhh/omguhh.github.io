@@ -1,8 +1,30 @@
 .project {
   &__wrapper {
-    padding: 20px 20px 0 0;
+    padding: 2.08333vw 1.91667vw;
   }
   &__image {
     width: 275px;
+    padding-bottom: 20px;
+  }
+  &__tabs {
+    padding: 2.08333vw 1.91667vw;
+    font-size: 18px;
+    padding-bottom: 0;
+    padding-right: 0;
+    font-family: $font-headers;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 1.46667vw;
+    line-height: 1.18182em;
+    letter-spacing: .02em;
+    color: $gray-text-color;
+    margin: 5px auto;
+
+  }
+  &__caption {
+    font-size: 1vw;
+    line-height: 1.33333em;
+    margin: 5px auto;
   }
 }

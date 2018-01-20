@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   &--dark {
     color: #ffffff;
-    align-items: center;  /* Add this */
+    //align-items: center;
     background-color: $color-primary;
     h1, h2, h3, h4, h5, h6, a, p {
       color: #ffffff;
@@ -20,7 +20,7 @@
     background-image: url('./bg-isobar.png');
   }
   &--full-height {
-    height: 100vh; //supported?
+    //height: 100vh; //supported?
   }
   &--full-width {
     width: 100%;

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .intro {
+    &__container {
+      width: 100%;
+    }
+    &__caption {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+}

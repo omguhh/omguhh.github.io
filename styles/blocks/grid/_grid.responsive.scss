@@ -1,0 +1,11 @@
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 0 0 50%;
+    padding: 0;
+  }
+}

@@ -12,4 +12,16 @@
     width: 100%;
     flex: unset;
   }
+  &--featured-projects {
+    width: 50%;
+    flex: 0 0 auto;
+    padding: 0;
+  }
+  &--projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
 }

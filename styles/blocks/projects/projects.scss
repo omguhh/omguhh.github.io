@@ -4,10 +4,27 @@
   }
   &__wrapper {
     padding: 2.08333vw 4.16667vw;
+    &:hover {
+      cursor: pointer;
+      .project__image__skew {
+        transform: skewY(3deg);
+      }
+      .project__title {
+        color: $color-primary;
+      }
+    }
   }
   &__image {
     width: 100%;
-    padding-bottom: 20px;
+    &__skew {
+      background-color: white;
+      position: relative;
+      height: 8%;
+      bottom: 20px;
+      transform: skewY(-3deg);
+      transition: all .85s;
+      margin-bottom: -22px;
+    }
   }
   &__tabs {
     padding: 2.08333vw 1.91667vw;
@@ -23,6 +40,7 @@
     letter-spacing: .02em;
     color: $gray-text-color;
     margin: 5px auto;
+    transition: all .2s;
 
   }
   &__caption {

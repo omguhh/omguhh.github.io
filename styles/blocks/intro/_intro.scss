@@ -2,6 +2,7 @@
   &__container {
     color: #ffffff;
     width: 50%;
+    position: relative;
     //align-items: center;
     background-color: $color-primary;
     h1, h2, h3, h4, h5, h6, a, p {
@@ -11,5 +12,7 @@
   &__caption {
     padding: 0 100px;
     margin-top: 20vh;
+    position: fixed;
+    width: 40%;
   }
 }

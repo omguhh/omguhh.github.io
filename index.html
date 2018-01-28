@@ -25,83 +25,34 @@
             <a href="">linkedin</a>
             <a href="">email</a>
         </div>
-
     </section>
 
     <section class="column column--full-height">
         <div class="project__container">
             <div class="column--projects">
-                <div class="column column--featured-projects">
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                </div>
-                <div class="column column--featured-projects js-parallax" data-speed="medium" data-direction="up" data-start="0" data-end="parent-bottom">
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                    <div class="project__wrapper">
-                        <img class="project__image" src="http://via.placeholder.com/251x251">
-                        <div class="project__image__skew"></div>
-                        <h3 class="project__title">Fittbug</h3>
-                        <p class="project__caption">
-                            The ultimate powder jacket 2.0.
-                            Made of recycled PET-bottles.
-                            45K waterproofness.
-                        </p>
-                    </div>
-                </div>
+                <div class="column column--featured-projects" id="projectListGroup1"></div>
+                <div class="column column--featured-projects js-parallax"  id="projectListGroup2" data-speed="medium" data-direction="up" data-start="0" data-end="parent-bottom"></div>
             </div>
         </div>
     </section>
 
+    <script type="text/template" id="projectsList">
+        <div class="project__wrapper">
+            <a href="{projectLink}">
+                <img class="project__image" src="{projectThumbnail}">
+                 <div class="project__image__skew"></div>
+                <h3 class="project__title">{projectTitle}</h3>
+                <p class="project__caption">{projectSummary}</p>
+            </a>
+        </div>
+    </script>
+
 </div>
 
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/projects.js"></script>
+<script>
+    projects.init();
+</script>
 </html>

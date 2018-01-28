@@ -1,41 +1,43 @@
 {
   "projects": [
     {
+      "title":"Fittbusfdg",
+      "summary":" The ultimate powder jacket 2.0. Made of recycled PET-bottles. 45K waterproofness.",
+      "thumbnail":"http://via.placeholder.com/251x251",
+      "externalLink":"https://www.google.com/"
+    },
+    {
       "title":"Fittbug",
       "summary":"whatever",
-      "thumbnail":"whatever",
+      "thumbnail":"http://via.placeholder.com/251x251",
       "timestamp":"10/10/2017"
     },
     {
       "title":"Fittbug",
       "summary":"whatever",
-      "thumbnail":"whatever",
+      "thumbnail":"http://via.placeholder.com/251x251",
       "timestamp":"10/10/2017"
     },
     {
       "title":"Fittbug",
       "summary":"whatever",
-      "thumbnail":"whatever",
+      "thumbnail":"http://via.placeholder.com/251x251",
       "timestamp":"10/10/2017"
     },
     {
       "title":"Fittbug",
       "summary":"whatever",
-      "thumbnail":"whatever",
+      "thumbnail":"http://via.placeholder.com/251x251",
+      "timestamp":"10/10/2017"
+    },
+    {
+      "title":"Fittbug",
+      "summary":"whatever",
+      "thumbnail":"http://via.placeholder.com/251x251",
       "timestamp":"10/10/2017"
     }
   ],
   "contributions": [
-    {
-      "title":"whatever",
-      "link":"whatever"
-    },
-    {
-      "title":"whatever",
-      "link":"whatever"
-    }
-  ],
-  "timeline": [
     {
       "title":"whatever",
       "link":"whatever"

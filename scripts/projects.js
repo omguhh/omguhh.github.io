@@ -23,8 +23,6 @@
             var template = $('#projectsList').text();
             var halfwayCheckPoint = Math.floor(projectsArray.length / 2);
 
-            console.log(halfwayCheckPoint);
-
             $.each(projectsArray, function (index, project) {
                 var renderedTemplate = projects.parseTemplate(
                     template,

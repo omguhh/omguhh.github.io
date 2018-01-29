@@ -1,60 +1,41 @@
 {
   "projects": [
     {
-      "title":"Fittbusfdg",
-      "summary":" The ultimate powder jacket 2.0. Made of recycled PET-bottles. 45K waterproofness.",
+      "title":"Music Player - Built with React",
+      "summary":" A basic media player using the audio API and react.I'll be extending it to fetch and play playlists off my Spotify soon!",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "externalLink":"https://www.google.com/"
+      "externalLink":"https://omguhh.github.io/spotify-playlist-player/"
     },
     {
-      "title":"Fittbug",
-      "summary":"whatever",
+      "title":"Helga & the Zoinks",
+      "summary":"An endless runner game like Monster Dash made by using the Corona SDK. I designed the art for this game and also programmed it with Lua. ",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "timestamp":"10/10/2017"
+      "externalLink":"https://www.dropbox.com/s/028o2urzs2hefvz/Untitled.mp4?dl=0"
     },
     {
-      "title":"Fittbug",
-      "summary":"whatever",
+      "title":"Let's Go - A GISWORX 2014 Developer Challenge 1st place winner ",
+      "summary":"An android application that makes use of the ARCGIS SDK & OSM to help the user get around Dubai by providing directions with different transport modes. User can also pin a location they want to visit and strike it out once they've visited.",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "timestamp":"10/10/2017"
+      "externalLink":"https://www.dropbox.com/s/fttwgze58nkynvd/LetsGo.mp4?dl=0"
     },
+
     {
-      "title":"Fittbug",
-      "summary":"whatever",
+      "title":"Fittbug - A GITEX 2014 Top 10 lifestyle Android App",
+      "summary":"Developed & designed by me, Fittbug monitors where you are and recommends alternative healither places & rewards you for it with coupons/vouchers to use.",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "timestamp":"10/10/2017"
+      "externalLink":"https://www.youtube.com/watch?v=cgJw-shCDfc"
     },
     {
-      "title":"Fittbug",
-      "summary":"whatever",
+      "title":"Snapple - Winner for most Educational game for WISTEM 2015",
+      "summary":"A java based desktop game made using LibGDX during the WISTEM hackathon. I designed and did the front-end development and debugging for the project.",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "timestamp":"10/10/2017"
+      "externalLink":"https://github.com/omguhh/Pithon"
     },
     {
-      "title":"Fittbug",
-      "summary":"whatever",
+      "title":"Open Source Work",
+      "summary":"",
       "thumbnail":"http://via.placeholder.com/251x251",
-      "timestamp":"10/10/2017"
-    }
-  ],
-  "contributions": [
-    {
-      "title":"whatever",
-      "link":"whatever"
-    },
-    {
-      "title":"whatever",
-      "link":"whatever"
-    }
-  ],
-  "social": [
-    {
-      "title":"whatever",
-      "link":"whatever"
-    },
-    {
-      "title":"whatever",
-      "link":"whatever"
+      "externalLink":"https://github.com/omguhh/Pithon"
     }
   ]
 }

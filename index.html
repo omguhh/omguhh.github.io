@@ -35,9 +35,11 @@
         </div>
     </section>
     <script type="text/template" id="projectsList">
-        <div class="project__wrapper">
+        <div class="project__wrapper {projectIsLast}">
             <a href="{projectLink}" target="_blank">
-                <img class="project__image" src="{projectThumbnail}">
+                <div class="image__wrapper">
+                    <img class="project__image" src="{projectThumbnail}">
+                </div>
                  <div class="project__image__skew"></div>
                 <h3 class="project__title">{projectTitle}</h3>
                 <p class="project__caption">{projectSummary}</p>

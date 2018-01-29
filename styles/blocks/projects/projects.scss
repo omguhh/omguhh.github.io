@@ -53,4 +53,51 @@
     line-height: 1.33333em;
     margin: 5px auto;
   }
+  &--is-last {
+    .project__image__skew {
+      display: none;
+    }
+    .project__image {
+      z-index: 3;
+      position: relative;
+      border: 3px solid $color-primary;
+      transition: transform .4s, -webkit-transform .4s;
+    }
+    .image__wrapper {
+      position: relative;
+      &:before , &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid black;
+        opacity: 0;
+        transition: opacity .2s, transform .4s, -webkit-transform .4s;
+        z-index: 2;
+      }
+      &:after {
+        background-color: $color-primary-light;
+        z-index: 1;
+      }
+      &:before {
+        background-color: $color-primary;
+      }
+    }
+    &:hover {
+      .project__image {
+        transform: translate(-20px, -20px);
+      }
+      .image__wrapper {
+        &:before, &:after {
+          opacity: 1;
+        }
+        &:after {
+          transform: translate(20px, 20px);
+        }
+      }
+    }
+  }
 }

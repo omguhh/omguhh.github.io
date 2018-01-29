@@ -3,7 +3,7 @@
     {
       "title":"Music Player - Built with React",
       "summary":" A basic media player using the audio API and react.I'll be extending it to fetch and play playlists off my Spotify soon!",
-      "thumbnail":"http://via.placeholder.com/251x251",
+      "thumbnail":"https://photos-5.dropbox.com/t/2/AACC1MF9VYnNe3p-SInQq6o9LERj8UKaFnSNvGfu1b0DfQ/12/241786686/jpeg/32x32/1/_/1/2/player.jpg/EO37qtcBGMTNASAHKAc/LpT42-nC-f7_oZLQcOVcOTj_clRhCwydW5WVnYrdY6k?size=1600x1200&size_mode=3",
       "externalLink":"https://omguhh.github.io/spotify-playlist-player/"
     },
     {
@@ -18,7 +18,6 @@
       "thumbnail":"http://via.placeholder.com/251x251",
       "externalLink":"https://www.dropbox.com/s/fttwgze58nkynvd/LetsGo.mp4?dl=0"
     },
-
     {
       "title":"Fittbug - A GITEX 2014 Top 10 lifestyle Android App",
       "summary":"Developed & designed by me, Fittbug monitors where you are and recommends alternative healither places & rewards you for it with coupons/vouchers to use.",
@@ -28,13 +27,13 @@
     {
       "title":"Snapple - Winner for most Educational game for WISTEM 2015",
       "summary":"A java based desktop game made using LibGDX during the WISTEM hackathon. I designed and did the front-end development and debugging for the project.",
-      "thumbnail":"http://via.placeholder.com/251x251",
+      "thumbnail":"https://photos-4.dropbox.com/t/2/AABMviWwnbjCECs7g9KseMJnhFGn12p68r8pv4TQlHMe0w/12/241786686/jpeg/32x32/1/_/1/2/snapple.jpg/EO37qtcBGMTNASAHKAc/eNgGA9RIGtsqBDiciTzXQY-vr0nQrYQjvRNgL0wEp48?size=1600x1200&size_mode=3",
       "externalLink":"https://github.com/omguhh/Pithon"
     },
     {
-      "title":"Open Source Work",
+      "title":"",
       "summary":"",
-      "thumbnail":"http://via.placeholder.com/251x251",
+      "thumbnail":"https://photos-2.dropbox.com/t/2/AADX3gCgWi0AL_WVX4r-g4sbw3s5pRB9X-S_yKL5k2TaHQ/12/241786686/png/32x32/1/_/1/2/opensource.png/EO37qtcBGMvNASAHKAc/_gRF8EZsXpaW1K-9x4nqyRE4ALHFW3Q0Vx-Oq4m51Iw?preserve_transparency=1&size=1600x1200&size_mode=3",
       "externalLink":"https://github.com/omguhh/Pithon"
     }
   ]

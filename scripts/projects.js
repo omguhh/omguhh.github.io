@@ -30,7 +30,8 @@
                         projectLink: project.externalLink,
                         projectThumbnail:project.thumbnail,
                         projectTitle: project.title,
-                        projectSummary: project.summary
+                        projectSummary: project.summary,
+                        projectIsLast: index+1 == projectsArray.length ? 'project--is-last' : ''
                     }
                 );
                 if(index < halfwayCheckPoint) {

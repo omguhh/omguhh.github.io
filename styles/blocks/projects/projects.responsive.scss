@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .project {
+    &__image {
+      width: 100%;
+      padding-bottom: 0;
+    }
+    &__title {
+      font-size: 19px;
+    }
+    &__caption {
+      font-size: 13px;
+    }
+    &__wrapper {
+      margin-bottom: 10px;
+    }
+  }
+}

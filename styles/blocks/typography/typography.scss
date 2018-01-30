@@ -1,0 +1,79 @@
+// Font Declarations
+
+@import url('//fonts.googleapis.com/css?family=Lato|Varela+Round');
+
+@font-face {
+  font-family:  'Lato', sans-serif;
+}
+
+@font-face {
+  font-family:  'Varela Round', serif;
+}
+
+//Font Variable Declarations
+$font-global: 'Lato';
+$font-headers: 'Varela Round';
+
+//Font size variables
+
+$font-size-base: 14px !default;
+$font-size-large: 18px;
+$font-size-xlarge: 23px;
+$font-size-xxlarge: 30px;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+
+p {
+  line-height: 1.5rem;
+  margin: 10px 0;
+  color: $gray-text-color;
+}
+a {
+  color: $color-primary;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  font-family: $font-headers;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  color: $color-primary;
+}
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem;
+
+}
+h2 {
+  font-size: 3.1vw;
+  line-height: 3vw;
+  margin-top: 3rem;
+}
+h3 {
+  font-size: 1.414rem;
+  margin-bottom: 1rem;
+
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}

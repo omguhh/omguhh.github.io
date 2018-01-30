@@ -1,0 +1,15 @@
+// Set up
+@import "reset";
+@import "normalize";
+@import "utils";
+@import "blocks/typography/typography";
+@import "blocks/grid/grid";
+@import "blocks/grid/grid.responsive";
+
+//Custom styling
+@import "blocks/layout/layout";
+@import "blocks/intro/intro";
+@import "blocks/intro/intro.responsive";
+@import "blocks/projects/projects";
+@import "blocks/projects/projects.responsive";
+@import "blocks/list/list";

@@ -1,13 +1,7 @@
 {
   "projects": [
     {
-      "title":"Music Player - Built with React",
-      "summary":" A basic media player using the audio API and react.I'll be extending it to fetch and play playlists off my Spotify soon!",
-      "thumbnail":"images/player.jpg",
-      "externalLink":"https://omguhh.github.io/spotify-playlist-player/"
-    },
-    {
-      "title":"Helga & the Zoinks",
+      "title":"Android/IOS Infinite Runner",
       "summary":"An endless runner game like Monster Dash made by using the Corona SDK. I designed the art for this game and also programmed it with Lua. ",
       "thumbnail":"images/helga.jpg",
       "externalLink":"https://www.dropbox.com/s/028o2urzs2hefvz/Untitled.mp4?dl=0"
@@ -29,12 +23,6 @@
       "summary":"A java based desktop game made using LibGDX during the WISTEM hackathon. I designed and did the front-end development and debugging for the project.",
       "thumbnail":"images/snapple.jpg",
       "externalLink":"https://github.com/omguhh/Pithon"
-    },
-    {
-      "title":"",
-      "summary":"",
-      "thumbnail":"images/opensource.png",
-      "externalLink":"https://github.com/omguhh"
     }
   ]
 }

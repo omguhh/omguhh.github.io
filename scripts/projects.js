@@ -30,15 +30,10 @@
                         projectLink: project.externalLink,
                         projectThumbnail:project.thumbnail,
                         projectTitle: project.title,
-                        projectSummary: project.summary,
-                        projectIsLast: index+1 == projectsArray.length ? 'project--is-last' : ''
+                        projectSummary: project.summary
                     }
                 );
-                if(index < halfwayCheckPoint) {
-                    $("#projectListGroup1").append($(renderedTemplate));
-                } else {
-                    $("#projectListGroup2").append($(renderedTemplate));
-                }
+                $("#projectListGroup1").append($(renderedTemplate));
             });
         },
 

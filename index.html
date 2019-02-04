@@ -23,45 +23,67 @@
 </head>
 <body>
 
-<div class="container ">
+<div class="container">
     <section class="intro__container">
         <div class="intro__caption">
-            <h2 class="intro__title"> Hi! I'm Yasmine, a software engineer in Dubai. </h2>
-            <p>I’m currently working at <a href="https://www.souqalmal.com"> Souqalmal.com </a> , but I've previously worked at <a href="http://www.icflix.com/" target="_blank"> ICFLIX </a> and <a href="http://www.socializeagency.com/"  target="_blank"> Socialize. </a> </p>
-            <p>
-                If you’re looking for a frontend engineer who
-                will care for every part of your project, from
-                design to user experience and writes clean,
-                maintainable, future proof code - hit me up!
-            </p>
+            <h1 class="intro__title">Yasmine Fadel ✨ </h1>
+            <p>I'm a software engineer who is passionate about visualization and a team player. <br> I 💖 contributing to open source, sharing what I learn and competing at hackathons. Nice to meet you. 👋 </p>
             <a href="https://github.com/omguhh" target="_blank">github</a>
             <a href="https://codepen.io/omguhh/" target="_blank">codepen</a>
             <a href="https://twitter.com/omguhh" target="_blank">twitter</a>
             <a href="https://www.linkedin.com/in/yasminef/" target="_blank">linkedin</a>
             <a href="mailto:yasmine.m.f@live.co.uk" target="_blank">email</a>
-            <a href="https://www.dropbox.com/s/0dr2z60rfx3gp1o/Yasmine_Fadel_CV_2018.pdf?dl=0" target="_blank"> Résumé/CV </a>
+            <a href="https://www.dropbox.com/s/0dr2z60rfx3gp1o/Yasmine_Fadel_CV_2018.pdf?dl=0" target="_blank"> résumé/CV </a>
+        </div>
+        <div class="intro__pfp">
+            <img alt="pfp pic"  src="https://avatars3.githubusercontent.com/u/5331964?s=460&v=4" style="width: 200px;height:200px;"/>
         </div>
     </section>
-    <section class="column column--full-height">
-        <div class="project__container">
-            <div class="column--projects">
-                <div class="column column--featured-projects" id="projectListGroup1"></div>
-                <div class="column column--featured-projects js-parallax"  id="projectListGroup2" data-speed="medium" data-direction="up" data-start="0" data-end="parent-bottom"></div>
-            </div>
+    <section class="project__container">
+        <div>
+            <h3>Projects</h3>
+        </div>
+        <div class="projects">
+            <div id="projectListGroup1"></div>
         </div>
     </section>
     <script type="text/template" id="projectsList">
-        <div class="project__wrapper {projectIsLast}">
-            <a href="{projectLink}" target="_blank">
-                <div class="image__wrapper">
-                    <img class="project__image" src="{projectThumbnail}">
-                </div>
-                 <div class="project__image__skew"></div>
+        <div class="column project__wrapper {projectIsLast}">
+            <aside class="image__wrapper">
+                <img class="project__image" src="{projectThumbnail}">
+            </aside>
+            <div>
                 <h3 class="project__title">{projectTitle}</h3>
                 <p class="project__caption">{projectSummary}</p>
-            </a>
+                <a href="{projectLink}" class="project__link" target="_blank">check it out!</a>
+            </div>
         </div>
     </script>
+</div>
+<div class="container container--full experience__wrapper">
+    <div class="experience__container">
+        <h4 class="experience__title">I have four years of experience working with startups and freelance projects.</h4>
+        <div class="experience__blocks">
+            <div class="experience__block">
+                <a class="experience__company" href="https://www.track24.com/">Track24</a>
+                <p class="experience__block-title">Software Engineer</p>
+                <p class="experience__date">May 2018- Present</p>
+            </div>
+            <div class="experience__block">
+                <a class="experience__company" href="https://www.souqalmal.com/">Souqalmal.com</a>
+                <p class="experience__block-title">Software Engineer</p>
+                <p class="experience__date">June 2016 - May 2018</p>
+            </div>
+            <div class="experience__block">
+                <a class="experience__company" href="http://www.icflix.com/">ICFLIX</a>
+                <p class="experience__block-title">Junior Software Engineer</p>
+                <p class="experience__date">July 2015- June 2016</p>
+            </div>
+        </div>
+        <div class="center">
+        <a href="" class="experience__link" target="_blank">read about me</a>
+        </div>
+    </div>
 </div>
 
 </body>

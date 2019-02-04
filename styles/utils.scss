@@ -1,4 +1,10 @@
-$color-primary: #0106ff;
+$color-primary: #192735;
 $color-primary-light: #1d3997;
 $color-secondary: #53dada;
-$gray-text-color: #424242;
+$gray-text-color: #424243;
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,36 +1,19 @@
 .project {
   &__container {
-    background-image: url('./bg-isobar.png');
+    display: grid;
+    grid-template-columns: 20% 80%;
   }
   &__wrapper {
-    padding: 2.08333vw 4.16667vw;
-    &:hover {
-      cursor: pointer;
-      .project__image__skew {
-        transform: skewY(3deg);
-      }
-      .project__title {
-        color: $color-primary;
-      }
-    }
     a {
       text-decoration: none;
     }
   }
   &__image {
-    width: 100%;
-    &__skew {
-      background-color: white;
-      position: relative;
-      height: 8%;
-      bottom: 20px;
-      transform: skewY(-3deg);
-      transition: all .65s;
-      margin-bottom: -35px;
-    }
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
   }
   &__tabs {
-    padding: 2.08333vw 1.91667vw;
     font-size: 18px;
     padding-bottom: 0;
     padding-right: 0;
@@ -38,7 +21,6 @@
   }
   &__title {
     font-weight: 400;
-    font-size: 1.46667vw;
     line-height: 1.18182em;
     letter-spacing: .02em;
     color: $gray-text-color;
@@ -46,58 +28,21 @@
     transition: all .2s;
     position: relative;
     z-index:5;
-
   }
   &__caption {
     font-size: 1vw;
     line-height: 1.33333em;
     margin: 5px auto;
   }
-  &--is-last {
-    .project__image__skew {
-      display: none;
-    }
-    .project__image {
-      z-index: 3;
-      position: relative;
-      border: 3px solid $color-primary;
-      transition: transform .4s, -webkit-transform .4s;
-    }
-    .image__wrapper {
-      position: relative;
-      &:before , &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: 2px solid black;
-        opacity: 0;
-        transition: opacity .2s, transform .4s, -webkit-transform .4s;
-        z-index: 2;
-      }
-      &:after {
-        background-color: $color-primary-light;
-        z-index: 1;
-      }
-      &:before {
-        background-color: $color-primary;
-      }
-    }
+  &__link {
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 8px 16px;
+    margin-top: 10px;
+    font-size: 12px;
     &:hover {
-      .project__image {
-        transform: translate(-20px, -20px);
-      }
-      .image__wrapper {
-        &:before, &:after {
-          opacity: 1;
-        }
-        &:after {
-          transform: translate(20px, 20px);
-        }
-      }
+      border-color: rgba(0,0,0,.8);
+      transition: .2s;
     }
   }
 }

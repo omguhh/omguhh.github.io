@@ -1,0 +1,22 @@
+
+@media (max-width: 768px) {
+  .experience {
+    &__container {
+      padding: 0 24px;
+    }
+    &__title {
+      //font-size: 22px;
+      line-height: normal;
+      margin: 10px 0;
+    }
+    &__wrapper {
+      padding-top: 0;
+    }
+    &__blocks {
+      grid-template-columns: 100%;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+}

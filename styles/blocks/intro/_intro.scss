@@ -1,18 +1,18 @@
 .intro {
   &__container {
-    color: #ffffff;
-    width: 50%;
-    position: relative;
-    //align-items: center;
-    background-color: $color-primary;
-    h1, h2, h3, h4, h5, h6, a, p {
-      color: #ffffff;
-    }
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 16px;
+    padding: 24px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
+
   &__caption {
-    padding: 0 5vw;
-    margin-top: 20vh;
-    position: fixed;
-    width: 40%;
+    //padding: 0 5vw;
+    //margin-top: 20vh;
+    //position: fixed;
+    //width: 40%;
   }
 }

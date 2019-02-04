@@ -1,42 +1,15 @@
 .container {
-  display: flex;
-  justify-content: space-between;
+  max-width: 1024px;
+  margin: auto;
+  display: block;
+  &--full {
+    max-width: 100%;
+  }
 }
 
 .column {
-  flex: 1;
-  padding: 0 15px;
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  &--full-width {
-    width: auto;
-    flex: unset;
-    padding-right: 0;
-    padding-left:  2.16667vw;
-  }
-  &--featured-projects {
-    width: 50%;
-    flex: 0 0 auto;
-    padding: 0;
-    position: relative;
-    &:first-of-type {
-      &:after {
-        content: '';
-        position: absolute;
-        top: 2.08333vw;
-        right: 0;
-        height: calc(100% - 2.08333vw);
-        width: 1px;
-        background-color: #e2e2e2;
-      }
-    }
-  }
-  &--projects {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 24px 0;
 }

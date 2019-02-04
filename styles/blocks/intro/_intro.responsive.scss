@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
   .intro {
     &__container {
-      width: 100%;
+      grid-template-columns: 100%;
+      height: 100vh;
     }
     &__caption {
       padding: 20px;
@@ -13,6 +14,9 @@
       margin-top: 0;
       font-size: 25px;
       line-height: 1.24em;
+    }
+    &__pfp {
+      display: none;
     }
   }
 }

@@ -1,17 +1,23 @@
 @media (max-width: 768px) {
   .project {
+    &__container {
+      padding: 24px;
+      grid-template-columns: 100%;
+    }
     &__image {
-      width: 100%;
       padding-bottom: 0;
     }
     &__title {
       font-size: 19px;
     }
-    &__caption {
-      font-size: 13px;
-    }
     &__wrapper {
       margin-bottom: 10px;
+      flex: 0 0 50%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__link {
+      font-size: 16px;
     }
   }
 }

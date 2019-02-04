@@ -1,18 +1,18 @@
 // Font Declarations
 
-@import url('//fonts.googleapis.com/css?family=Lato|Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700|Work+Sans');
 
 @font-face {
-  font-family:  'Lato', sans-serif;
+  font-family:  'Work Sans', sans-serif;
 }
 
 @font-face {
-  font-family:  'Varela Round', serif;
+  font-family:  'PT Serif', serif;
 }
 
 //Font Variable Declarations
-$font-global: 'Lato';
-$font-headers: 'Varela Round';
+$font-global: 'Work Sans';
+$font-headers: 'PT Serif';
 
 //Font size variables
 
@@ -61,7 +61,7 @@ h1 {
 h2 {
   font-size: 3.1vw;
   line-height: 3vw;
-  margin-top: 3rem;
+  margin: 0;
 }
 h3 {
   font-size: 1.414rem;
@@ -76,4 +76,11 @@ h5 {
 }
 h6 {
   font-size: 0.3535rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 18px  !important;
+    line-height: 27px !important;
+  }
 }
